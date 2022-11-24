@@ -24,7 +24,7 @@ body {
 
 /* header rules here */
 header {
-    background-color: #17a8e4;
+    background-color: #f3c456;
     padding: 1rem 2%;
 }
 
@@ -74,7 +74,7 @@ main {
 }
 
 main h1 {
-    color: #17a8e4;
+    color: #c98d00;
 }
 
 main figure img{
@@ -94,5 +94,5 @@ main figcaption {
 footer {
     text-align: center;
     padding: 1rem 2%;
-    background-color: #17a8e4;
+    background-color: #f3c456;
 }
