@@ -470,16 +470,20 @@ header h2 {
 nav {
   background-color: #111;
 }
+
 nav ul {
   margin: 0;
   padding: 0;
 }
+
 nav li {
   list-style-type: none;
 }
+
 nav li.active {
   background-color: #333;
 }
+
 nav a {
   display: block;
   padding: .8rem 0;
@@ -488,6 +492,7 @@ nav a {
   text-align: center;
   text-decoration: none;
 }
+
 nav a:hover {
   background-color: #444;
 }
@@ -496,17 +501,21 @@ main {
   display: block;
   padding: 1rem 2%;
 }
+
 main h1 {
   color: #e4c517;
   font-weight: 700;
 }
+
+main figure img {
+  width: 100%;
+}
+
 main figure {
   margin: 0;
   width: 100%;
 }
-main figure img {
-  width: 100%;
-}
+
 main figcaption {
   text-align: center;
   font-size: .8rem;
