@@ -14,45 +14,56 @@ body {
 header {
     background-color: $primaryColor;
     padding: 1rem $gutter;
-} // end of header
-header h1 {
-	margin: 0; 
-	font-size: 1.5rem;
-    font-weight: $heavyWeight;
-}
-header h2{
-	margin: 0; 
-	font-size: 1.2rem; 
-	font-weight: normal;
-}
 
-nav {background-color: #111;}
-nav ul{margin:0; padding: 0;}
-nav li {list-style-type: none;}
-nav li.active {background-color: #333}
-nav a {
+    h1 {
+        margin: 0; 
+        font-size: 1.5rem;
+        font-weight: $heavyWeight;
+    } // end of h1
+
+    h2{
+        margin: 0; 
+        font-size: 1.2rem; 
+        font-weight: normal;
+    } // end of h2
+} // end of header
+  
+
+nav {background-color: #111;
+
+ ul{margin:0; padding: 0;} // end of ul
+
+ li {list-style-type: none;} // end of li
+
+ li.active {background-color: #333} // end of li.active
+
+ a {
     display: block;
     padding: .8rem 0; /*44px min*/
     color: #eee;
     text-align: center;
     text-decoration: none;
-}
-nav a:hover {background-color: #444;}
+} // end of a
 
-main{display: block; padding: 1rem $gutter;}
-main h1 {
+ a:hover {background-color: #444;} // end of a:hover
+
+} // end nav
+
+
+main{display: block; padding: 1rem $gutter;
+ h1 {
     color: $primaryColor;
     font-weight: $heavyWeight;
-}
+} // end of h1
 
-main figure img {width: 100%;}
-main figure{
+  
+ figure{
     margin: 0;
     width: 100%;
-    
-}
-main figcaption {text-align: center; font-size: .8rem;}
-
+    img {width: 100%;} // end of figure img
+} // end of figure
+ figcaption {text-align: center; font-size: .8rem;} // end of figcaption
+} // end of main
 
 
 
