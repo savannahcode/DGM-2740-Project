@@ -69,11 +69,6 @@ div.fruits{
     flex-wrap: wrap;
 }
   
-div.fruits figure{
-    flex-basis: 46%;
-    margin: 1rem 2%;
-    
-} // end of figure
 
 figure img {
     width: 100%;
@@ -100,3 +95,10 @@ footer {
   display: table;
   clear: both;
 }
+
+// put it at the end because it wasn't respomding to media queries when higher in scss?? Weird.
+div.fruits figure{
+    flex-basis: 46%;
+    margin: 1rem 2%;
+    
+} // end of figure
