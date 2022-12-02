@@ -144,31 +144,29 @@ html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 /* body rules */
 body { font-family: "Quicksand", sans-serif; font-weight: 300; font-size: 16px; }
 
-div#headerWrapper { background-color: #e4c517; }
+div#headerWrapper { background-color: #25c3bb; }
 
 header { display: flex; padding: 1rem 2%; /* top | right | bottom | left */ }
 header #header-text { margin: 3.6em 0 0 1em; }
 header h1 { margin: 0; font-size: 1.5rem; font-weight: 700; }
 header h2 { display: none; margin: 0; font-size: 1.2rem; font-weight: normal; }
 
-div#navWrapper { background-color: #111; }
+div#navWrapper { background-color: #de4646; }
 
 nav ul { margin: 0; padding: 0; }
 nav li { list-style-type: none; }
-nav li.active { background-color: #333; }
+nav li.active { background-color: #a11d1d; }
 nav a { display: block; padding: .8rem 0; /*44px min*/ color: #eee; text-align: center; text-decoration: none; }
 nav a:hover { background-color: #444; }
 
 main { display: block; }
-main picture.hero { width: 100%; }
-main img { width: 100%; height: auto; }
-main h1 { color: #e4c517; font-weight: 700; margin: 0.3em 2%; }
-main p { margin: 1em 2% 2em 2%; }
-main figure { margin-left: 0; width: 100%; }
-main figure img { width: 100%; }
+main h1 { color: #25c3bb; font-weight: 700; margin: 0.3em 2%; }
+main div.fruits { display: flex; flex-wrap: wrap; }
+main div.fruits figure { flex-basis: 46%; margin: 1rem 2%; }
+main div.fruits figure img { width: 100%; margin: 0; }
 main figcaption { text-align: center; font-size: .8rem; }
 
-div#footerWrapper { background-color: #e4c517; }
+div#footerWrapper { background-color: #25c3bb; }
 
 footer { text-align: center; padding: 1rem 2%; }
 
@@ -179,13 +177,11 @@ footer { text-align: center; padding: 1rem 2%; }
   header { /* top | right | bottom | left */ }
   header #header-text { margin: 2.3em 0 0 1em; }
   header h2 { display: block; }
-  main figure { float: right; width: 48%; margin-left: 2%; margin-bottom: .5rem; }
-  div.news { clear: both; column-count: 2; column-rule: 1px solid #ddd; } }
+  div.fruits figure { flex-basis: 29%; } }
 /* end of media query */
-@media only screen and (min-width: 1028px) { header, nav, main, footer { max-width: 1200px; margin: auto; }
+@media only screen and (min-width: 1028px) { header, nav, main, footer { max-width: 1140px; margin: auto; }
   nav ul { padding-left: 2%; }
   nav li { width: auto; }
   nav a { padding: .5rem 1rem; }
-  main figure { width: 31%; }
-  div.news { column-count: 3; } }
+  div.fruits figure { flex-basis: 21%; } }
 /* end of media query */

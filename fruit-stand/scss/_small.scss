@@ -38,7 +38,7 @@ header {
 } // end of header
   
 div#navWrapper {
-    background-color: #111;
+    background-color: $supplementColor;
 }
 
 nav {
@@ -46,7 +46,7 @@ nav {
 
  li {list-style-type: none;} // end of li
 
- li.active {background-color: #333} // end of li.active
+ li.active {background-color: darken($supplementColor, 20%)} // end of li.active
 
  a {
     display: block;
@@ -61,26 +61,26 @@ nav {
 } // end nav
 
 
-main{display: block;
-
-    picture.hero {width: 100%;}
-    img {
-        width: 100%;
-        height: auto;
-    }
-
+main{
+    display: block;
  h1 {
     color: $primaryColor;
     font-weight: $heavyWeight;
     margin: .3em $gutter;
 } // end of h1
 
-p{ margin: 1em $gutter 2em$gutter;}
+div.fruits{
+    display: flex;
+    flex-wrap: wrap;
+}
   
- figure{
-    margin-left: 0;
-    width: 100%;
-    img {width: 100%;} // end of figure img
+div.fruits figure{
+    flex-basis: 46%;
+    margin: 1rem 2%;
+    img {
+        width: 100%;
+        margin: 0;
+    } // end of figure img
 } // end of figure
 
  figcaption {
