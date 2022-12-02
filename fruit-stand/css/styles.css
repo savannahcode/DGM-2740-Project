@@ -144,31 +144,26 @@ html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 /* body rules */
 body { font-family: "Quicksand", sans-serif; font-weight: 300; font-size: 16px; }
 
-div#headerWrapper { background-color: #25c3bb; }
-
-header { display: flex; padding: 1rem 2%; /* top | right | bottom | left */ }
+header { background-color: #25c3bb; display: flex; padding: 1rem 2%; /* top | right | bottom | left */ }
 header #header-text { margin: 2.3em 0 0 1em; }
 header h1 { margin: 0; font-size: 1.5rem; font-weight: 700; }
 header h2 { margin: 0; font-size: 1.2rem; font-weight: normal; }
 
-div#navWrapper { background-color: #de4646; }
-
+nav { background-color: #de4646; }
 nav ul { margin: 0; padding: 0; }
 nav li { list-style-type: none; }
 nav li.active { background-color: #a11d1d; }
 nav a { display: block; padding: .8rem 0; /*44px min*/ color: #eee; text-align: center; text-decoration: none; }
-nav a:hover { background-color: #444; }
+nav a:hover { text-decoration: underline 4px #a11d1d; }
 
 main { display: block; }
 main h1 { color: #25c3bb; font-weight: 700; margin: 0.3em 2%; }
 main div.fruits { display: flex; flex-wrap: wrap; }
 main div.fruits figure { flex-basis: 46%; margin: 1rem 2%; }
-main div.fruits figure img { width: 100%; margin: 0; }
+main figure img { width: 100%; margin: 0; }
 main figcaption { text-align: center; font-size: .8rem; }
 
-div#footerWrapper { background-color: #25c3bb; }
-
-footer { text-align: center; padding: 1rem 2%; }
+footer { background-color: #25c3bb; text-align: center; padding: 1rem 2%; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after { content: ""; display: table; clear: both; }

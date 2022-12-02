@@ -11,11 +11,9 @@ body {
     font-size: 16px;
 }
 
-div#headerWrapper{
-    background-color: $primaryColor;
-}
 
 header {
+    background-color: $primaryColor;
     display: flex;
     padding: 1rem $gutter;
 
@@ -35,12 +33,9 @@ header {
     } // end of h2
     
 } // end of header
-  
-div#navWrapper {
-    background-color: $supplementColor;
-}
 
 nav {
+    background-color: $supplementColor;
  ul{margin:0; padding: 0;} // end of ul
 
  li {list-style-type: none;} // end of li
@@ -55,7 +50,7 @@ nav {
     text-decoration: none;
 } // end of a
 
- a:hover {background-color: #444;} // end of a:hover
+ a:hover {text-decoration: underline 4px darken($supplementColor, 20%);} // end of a:hover
 
 } // end nav
 
@@ -76,11 +71,13 @@ div.fruits{
 div.fruits figure{
     flex-basis: 46%;
     margin: 1rem 2%;
-    img {
-        width: 100%;
-        margin: 0;
-    } // end of figure img
+    
 } // end of figure
+
+figure img {
+    width: 100%;
+    margin: 0;
+} // end of figure img
 
  figcaption {
     text-align: center; 
@@ -89,11 +86,8 @@ div.fruits figure{
 } // end of main
 
 
-div#footerWrapper{ 
-    background-color: $primaryColor;
-} 
-
 footer {
+    background-color: $primaryColor;
     text-align: center;
     padding: 1rem $gutter;
 }
