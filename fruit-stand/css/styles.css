@@ -154,7 +154,7 @@ nav ul { margin: 0; padding: 0; }
 nav li { list-style-type: none; }
 nav li.active { background-color: #a11d1d; }
 nav a { display: block; padding: .8rem 0; /*44px min*/ color: #eee; text-align: center; text-decoration: none; }
-nav a:hover { text-decoration: underline 4px #a11d1d; }
+nav a:hover { text-decoration: underline 4px #ed9d9d; }
 
 main { display: block; }
 main h1 { color: #25c3bb; font-weight: 700; margin: 0.3em 2%; }
