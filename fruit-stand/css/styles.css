@@ -147,9 +147,9 @@ body { font-family: "Quicksand", sans-serif; font-weight: 300; font-size: 16px; 
 div#headerWrapper { background-color: #25c3bb; }
 
 header { display: flex; padding: 1rem 2%; /* top | right | bottom | left */ }
-header #header-text { margin: 3.6em 0 0 1em; }
+header #header-text { margin: 2.3em 0 0 1em; }
 header h1 { margin: 0; font-size: 1.5rem; font-weight: 700; }
-header h2 { display: none; margin: 0; font-size: 1.2rem; font-weight: normal; }
+header h2 { margin: 0; font-size: 1.2rem; font-weight: normal; }
 
 div#navWrapper { background-color: #de4646; }
 
@@ -174,9 +174,6 @@ footer { text-align: center; padding: 1rem 2%; }
 .clearfix:after { content: ""; display: table; clear: both; }
 
 @media only screen and (min-width: 560px) { nav li { width: 25%; float: left; }
-  header { /* top | right | bottom | left */ }
-  header #header-text { margin: 2.3em 0 0 1em; }
-  header h2 { display: block; }
   div.fruits figure { flex-basis: 29%; } }
 /* end of media query */
 @media only screen and (min-width: 1028px) { header, nav, main, footer { max-width: 1140px; margin: auto; }
