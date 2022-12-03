@@ -1,86 +1,103 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 
 /*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 /*----------- BODY --------------*/
 body {
-    font-size: 16px;
-    font-family: $defaultFont
-}
+  font-size: 16px;
+  font-family: $defaultFont;
 
+  div.top-text h2 {
+    padding: 0.2rem;
+    margin: 0;
+    font-size: 1rem;
+    background-color: $secondaryColor;
+    color: #eee;
+    font-weight: $lightWeight;
+  }
+}
 
 /*----------- HEADER --------------*/
-.headerWrapper{
-    background-color: $secondaryColor;
+.headerWrapper {
+  height: 140px;
+  background-image: url(../images/hero-small.jpg);
+  background-position: left bottom;
 }
 header {
-    padding: .5rem 2%;
-    
-    color: #fff;
+  padding: 0.5rem 2%;
+  color: #fff;
 }
-header h1 {margin: 0;}
-header h2 {margin: 0; font-weight: $normalWeight;}
+header h1 {
+  margin: 0;
+}
+header h2 {
+  margin: 0;
+  font-weight: $normalWeight;
+}
 
 /*----------- NAVIGATION --------------*/
 
-.navWrapper{
-    background-color: $menuColor;
+.navWrapper {
+  background-color: $menuColor;
 }
 nav {
-    button{
-        background: transparent;
-        border: none;
-        font-size: 1.5rem;
-        padding: .5rem;
-        color: rgba(255, 255, 255, .9);
-    } //end button
+  button {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    color: rgba(255, 255, 255, 0.9);
+  } //end button
 }
 nav ul {
-    display: none;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
-nav ul.open{
-    display: block;
+nav ul.open {
+  display: block;
 }
 nav ul li a {
-    display: block;
-    color: #fff;
-    padding: .5rem 0;
-    text-decoration: none;
-    font-size: .9rem;
-    text-align: center;
+  display: block;
+  color: #fff;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-align: center;
 }
 nav ul li a:hover {
-    background-color: lighten($menuColor, 10%);
-    color: #fff;
+  background-color: lighten($menuColor, 10%);
+  color: #fff;
 }
 nav ul li.active a {
-    background-color: darken($menuColor, 8%);
-    color: #fff;
+  background-color: darken($menuColor, 8%);
+  color: #fff;
 }
 /*----------- MAIN --------------*/
 main {
-    padding: 0 2%;
-    min-height: 10rem;
+  padding: 0 2%;
+  min-height: 10rem;
 }
-
 
 /*----------- FOOTER --------------*/
-.footerWrapper{
-    background-color: $secondaryColor;
+.footerWrapper {
+  background-color: $secondaryColor;
 }
 footer {
-    color: #eee;
-    padding: .5rem 2%;
-    text-align: center;
+  color: #eee;
+  padding: 0.5rem 2%;
+  text-align: center;
 }
-
-
 
 /*----- Clearfix: Force an Element not to collapse 
 .clearfix:after {

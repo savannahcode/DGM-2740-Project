@@ -2,13 +2,18 @@ header,
 nav,
 main,
 footer {
-  max-width: 64rem;
+  max-width: 60rem;
   margin: auto;
 }
 
 /*----------- BODY --------------*/
 
 /*----------- HEADER --------------*/
+.headerWrapper{
+        height: 400px;
+        background-image: url(../images/hero-large.jpg);
+        background-size: cover;
+}
 
 /*----------- NAVIGATION --------------*/
 

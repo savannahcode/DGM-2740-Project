@@ -115,11 +115,12 @@ html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
 /*----------- BODY --------------*/
 body { font-size: 16px; font-family: "Poppins", Verdana, sans-serif; }
+body div.top-text h2 { padding: 0.2rem; margin: 0; font-size: 1rem; background-color: #006dc6; color: #eee; font-weight: 300; }
 
 /*----------- HEADER --------------*/
-.headerWrapper { background-color: #006dc6; }
+.headerWrapper { height: 140px; background-image: url(../images/hero-small.jpg); background-position: left bottom; }
 
-header { padding: .5rem 2%; color: #fff; }
+header { padding: 0.5rem 2%; color: #fff; }
 
 header h1 { margin: 0; }
 
@@ -128,13 +129,13 @@ header h2 { margin: 0; font-weight: 500; }
 /*----------- NAVIGATION --------------*/
 .navWrapper { background-color: #005e40; }
 
-nav button { background: transparent; border: none; font-size: 1.5rem; padding: .5rem; color: rgba(255, 255, 255, 0.9); }
+nav button { background: transparent; border: none; font-size: 1.5rem; padding: 0.5rem; color: rgba(255, 255, 255, 0.9); }
 
 nav ul { display: none; list-style-type: none; padding: 0; margin: 0; }
 
 nav ul.open { display: block; }
 
-nav ul li a { display: block; color: #fff; padding: .5rem 0; text-decoration: none; font-size: .9rem; text-align: center; }
+nav ul li a { display: block; color: #fff; padding: 0.5rem 0; text-decoration: none; font-size: 0.9rem; text-align: center; }
 
 nav ul li a:hover { background-color: #009163; color: #fff; }
 
@@ -146,22 +147,24 @@ main { padding: 0 2%; min-height: 10rem; }
 /*----------- FOOTER --------------*/
 .footerWrapper { background-color: #006dc6; }
 
-footer { color: #eee; padding: .5rem 2%; text-align: center; }
+footer { color: #eee; padding: 0.5rem 2%; text-align: center; }
 
 /*----- Clearfix: Force an Element not to collapse 
 .clearfix:after { content: ""; display: table; clear: both;
 } -----*/
 @media only screen and (min-width: 35rem) { /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
+  .headerWrapper { height: 240px; background-image: url(../images/hero-medium.jpg); }
   /*----------- NAVIGATION --------------*/
   nav ul li { width: auto; }
   nav ul li a { padding: .5rem 1rem; }
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/ }
 /* end of media query */
-@media only screen and (min-width: 64rem) { header, nav, main, footer { max-width: 64rem; margin: auto; }
+@media only screen and (min-width: 60rem) { header, nav, main, footer { max-width: 60rem; margin: auto; }
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
+  .headerWrapper { height: 400px; background-image: url(../images/hero-large.jpg); background-size: cover; }
   /*----------- NAVIGATION --------------*/
   nav button { display: none; }
   nav ul, nav ul.open { margin-left: 2%; display: flex; justify-content: flex-end; }
