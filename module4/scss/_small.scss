@@ -87,11 +87,16 @@ nav ul li.active a {
 main {
   padding: 0 2%;
   min-height: 10rem;
-
+.card-deck{
+    display: flex;
+    flex-wrap: wrap;
+}
   .card{
+    flex-basis: 100%;
     border: 1px solid #999;
     border-radius: $cbr;
     text-align: center;
+    margin: 1rem 1%;
     section{
         background-color: darken($secondaryColor, 10%);
         color: #eee;
@@ -99,6 +104,18 @@ main {
         border-top-left-radius: $cbr - 1;
         border-top-right-radius: $cbr - 1;
     } // end of section
+    img {padding: 1rem;}
+    p {padding:1rem 2vw;}
+    a{
+        display: block;
+        background-color: lighten($primaryColor, 20%);
+        color: #eee;
+        padding: 1rem 0;
+        margin: 1rem 4vw;
+        border-radius: $cbr;
+        text-decoration: none;
+    }
+    a:hover {background-color: lighten($primaryColor, 30%);}
   } //end of card
 }
 
