@@ -16,13 +16,16 @@ body {
   font-size: 16px;
   font-family: $defaultFont;
 
-  div.top-text h2 {
-    padding: 0.2rem;
+  div.top-text {
     margin: 0;
-    font-size: 1rem;
+    font-size: .8rem;
     background-color: $secondaryColor;
     color: #eee;
     font-weight: $lightWeight;
+    h2{
+        padding: 0.5rem 2%;
+        margin: 0;
+    }
   }
 }
 
@@ -33,15 +36,18 @@ body {
   background-position: left bottom;
 }
 header {
-  padding: 0.5rem 2%;
+    height: 100%;
+    width: 100%;
   color: #fff;
-}
-header h1 {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  h1 {
+    margin: 0;
+    background-color: rgba(0,0,0, 0.4);
+    padding: 1rem 2vw;
 }
-header h2 {
-  margin: 0;
-  font-weight: $normalWeight;
 }
 
 /*----------- NAVIGATION --------------*/

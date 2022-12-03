@@ -115,16 +115,14 @@ html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
 /*----------- BODY --------------*/
 body { font-size: 16px; font-family: "Poppins", Verdana, sans-serif; }
-body div.top-text h2 { padding: 0.2rem; margin: 0; font-size: 1rem; background-color: #006dc6; color: #eee; font-weight: 300; }
+body div.top-text { margin: 0; font-size: .8rem; background-color: #006dc6; color: #eee; font-weight: 300; }
+body div.top-text h2 { padding: 0.5rem 2%; margin: 0; }
 
 /*----------- HEADER --------------*/
 .headerWrapper { height: 140px; background-image: url(../images/hero-small.jpg); background-position: left bottom; }
 
-header { padding: 0.5rem 2%; color: #fff; }
-
-header h1 { margin: 0; }
-
-header h2 { margin: 0; font-weight: 500; }
+header { height: 100%; width: 100%; color: #fff; margin: 0; display: flex; flex-direction: column; justify-content: flex-end; }
+header h1 { margin: 0; background-color: rgba(0, 0, 0, 0.4); padding: 1rem 2vw; }
 
 /*----------- NAVIGATION --------------*/
 .navWrapper { background-color: #005e40; }
@@ -169,8 +167,9 @@ footer { color: #eee; padding: 0.5rem 2%; text-align: center; }
   main .card { flex-basis: 48%; }
   /*----------- FOOTER --------------*/ }
 /* end of media query */
-@media only screen and (min-width: 60rem) { header, nav, main, footer { max-width: 60rem; margin: auto; }
+@media only screen and (min-width: 60rem) { nav, main, footer { max-width: 60rem; margin: auto; }
   /*----------- BODY --------------*/
+  div.top-text h2 { margin: 0 auto; }
   /*----------- HEADER --------------*/
   .headerWrapper { height: 400px; background-image: url(../images/hero-large.jpg); background-size: cover; }
   /*----------- NAVIGATION --------------*/
