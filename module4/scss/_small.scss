@@ -104,8 +104,15 @@ main {
         border-top-left-radius: $cbr - 1;
         border-top-right-radius: $cbr - 1;
     } // end of section
-    img {padding: 1rem;}
-    p {padding:1rem 2vw;}
+    img {
+        padding: 1rem;
+        width: 30%;
+        height: auto;
+    } // end of img
+    p {
+        padding:0 2vw 1rem;
+        margin-top: 0;
+    }
     a{
         display: block;
         background-color: lighten($primaryColor, 20%);

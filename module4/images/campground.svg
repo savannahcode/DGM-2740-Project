@@ -1,0 +1,7 @@
+<svg  version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+   <rect x="0" y="17" width="22" height="1" fill="none" stroke="black" stroke-width="1"/>
+   <polyline points="2,17 11,2 20,17 16,17 11,10 6,17 2,17" fill="black">
+   <animate attributeName="points" dur="5s" repeatCount="indefinite"
+    values="2,17 11,2 20,17 16,17 11,10 6,17 2,17;2,17 11,2 20,17 11,17 11,10 11,17 2,17;2,17 11,2 20,17 16,17 11,10 6,17 2,17;2,17 11,2 20,17 16,17 11,10 6,17 2,17"/>
+</polyline>
+</svg>
