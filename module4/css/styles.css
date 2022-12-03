@@ -143,6 +143,8 @@ nav ul li.active a { background-color: #003524; color: #fff; }
 
 /*----------- MAIN --------------*/
 main { padding: 0 2%; min-height: 10rem; }
+main .card { border: 1px solid #999; border-radius: 10px; text-align: center; }
+main .card section { background-color: #005193; color: #eee; padding: 1rem 0; border-top-left-radius: 9px; border-top-right-radius: 9px; }
 
 /*----------- FOOTER --------------*/
 .footerWrapper { background-color: #006dc6; }

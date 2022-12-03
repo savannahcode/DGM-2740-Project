@@ -87,6 +87,19 @@ nav ul li.active a {
 main {
   padding: 0 2%;
   min-height: 10rem;
+
+  .card{
+    border: 1px solid #999;
+    border-radius: $cbr;
+    text-align: center;
+    section{
+        background-color: darken($secondaryColor, 10%);
+        color: #eee;
+        padding: 1rem 0;
+        border-top-left-radius: $cbr - 1;
+        border-top-right-radius: $cbr - 1;
+    } // end of section
+  } //end of card
 }
 
 /*----------- FOOTER --------------*/
