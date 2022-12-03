@@ -1,23 +1,28 @@
-header, nav, main, footer {
-        max-width: 64rem;
-        margin:auto;
+header,
+nav,
+main,
+footer {
+  max-width: 64rem;
+  margin: auto;
 }
 
 /*----------- BODY --------------*/
 
-
-
 /*----------- HEADER --------------*/
-
-
 
 /*----------- NAVIGATION --------------*/
 
-
+nav {
+  button {
+    display: none;
+  }
+  ul, ul.open{
+        margin-left: 2%;
+        display: flex;
+        justify-content: flex-end;
+  }
+}
 
 /*----------- MAIN --------------*/
 
-
-
 /*----------- FOOTER --------------*/
-    

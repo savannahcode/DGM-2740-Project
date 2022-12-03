@@ -128,11 +128,11 @@ header h2 { margin: 0; font-weight: 500; }
 /*----------- NAVIGATION --------------*/
 .navWrapper { background-color: #005e40; }
 
-nav button { background: transparent; border: none; font-size: 1.5rem; padding-left: .5rem; color: rgba(255, 255, 255, 0.9); }
+nav button { background: transparent; border: none; font-size: 1.5rem; padding: .5rem; color: rgba(255, 255, 255, 0.9); }
 
-nav ul { list-style-type: none; padding: 0; margin: 0; }
+nav ul { display: none; list-style-type: none; padding: 0; margin: 0; }
 
-nav ul li { float: left; width: 25%; }
+nav ul.open { display: block; }
 
 nav ul li a { display: block; color: #fff; padding: .5rem 0; text-decoration: none; font-size: .9rem; text-align: center; }
 
@@ -148,13 +148,12 @@ main { padding: 0 2%; min-height: 10rem; }
 
 footer { color: #eee; padding: .5rem 2%; text-align: center; }
 
-/*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after { content: ""; display: table; clear: both; }
-
+/*----- Clearfix: Force an Element not to collapse 
+.clearfix:after { content: ""; display: table; clear: both;
+} -----*/
 @media only screen and (min-width: 35rem) { /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
-  nav ul { margin-left: 2%; }
   nav ul li { width: auto; }
   nav ul li a { padding: .5rem 1rem; }
   /*----------- MAIN --------------*/
@@ -164,6 +163,8 @@ footer { color: #eee; padding: .5rem 2%; text-align: center; }
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
+  nav button { display: none; }
+  nav ul, nav ul.open { margin-left: 2%; display: flex; justify-content: flex-end; }
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/ }
 /* end of media query */

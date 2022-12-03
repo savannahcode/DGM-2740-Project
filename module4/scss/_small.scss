@@ -34,18 +34,18 @@ nav {
         background: transparent;
         border: none;
         font-size: 1.5rem;
-        padding-left: .5rem;
+        padding: .5rem;
         color: rgba(255, 255, 255, .9);
     } //end button
 }
 nav ul {
+    display: none;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-nav ul li {
-    float: left;
-    width: 25%;
+nav ul.open{
+    display: block;
 }
 nav ul li a {
     display: block;
@@ -82,9 +82,9 @@ footer {
 
 
 
-/*----- Clearfix: Force an Element not to collapse -----*/
+/*----- Clearfix: Force an Element not to collapse 
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
-}
+} -----*/
