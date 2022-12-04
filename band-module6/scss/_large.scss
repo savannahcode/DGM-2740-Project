@@ -1,23 +1,37 @@
-header, nav, main, footer {
-        max-width: 64rem;
-        margin:auto;
+header, main {
+    max-width: 1240px;
+    margin: auto;
 }
 
-/*----------- BODY --------------*/
+header {
+    grid-template-columns: 51px auto auto;
+    background-color: transparent;
+}
 
-
-
-/*----------- HEADER --------------*/
-
-
-
-/*----------- NAVIGATION --------------*/
-
-
-
-/*----------- MAIN --------------*/
-
-
-
-/*----------- FOOTER --------------*/
-    
+/* NAVIGATION STUFF GOES HERE  */
+nav {
+    button {
+        display: none;
+        justify-self: end;
+    }
+    ul, ul.open{
+        position: relative;
+        display: flex;
+        background-color: transparent;
+        width: auto;
+    } // end ul
+    ul li a {
+        color: #333;
+        border-radius: 20px;
+        padding: .5rem 1rem;
+        margin-left: .2rem;
+        transition: all .5s ease;
+    }
+    ul li a:hover {
+        background-color: #eee;
+        color: #444!important;
+    }
+    ul li.active a {
+        color:white
+    }
+}
