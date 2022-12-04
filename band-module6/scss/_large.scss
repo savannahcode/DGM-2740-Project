@@ -15,6 +15,7 @@ nav {
         justify-self: end;
     }
     ul, ul.open{
+        justify-content: flex-end;
         position: relative;
         display: flex;
         background-color: transparent;

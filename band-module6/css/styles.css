@@ -133,14 +133,15 @@ nav ul {
   width: 100%;
   display: none; }
 nav ul.open {
-  display: block; }
+  display: block;
+  z-index: 1; }
 nav ul li a {
   display: block;
   padding: .9rem 2vw;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
-  text-align: right; }
+  text-align: center; }
 nav ul li.active a {
   background-color: #1c445e; }
 nav ul li a:hover {
@@ -161,26 +162,34 @@ main {
     font-weight: 300; }
   main .member-collection {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin: 2em 0; }
   main .member {
-    flex-basis: 100%;
-    border: 1px solid #999;
+    flex-basis: 98%;
     border-radius: 10px;
     text-align: center;
-    margin: auto; }
+    margin: auto;
+    min-height: 644px; }
   main img {
     padding: 1rem;
     width: 100%;
     height: auto; }
   main .circle {
+    float: right;
     clip-path: circle(40% at 50% 45%);
-    shape-outside: circle(40%); }
+    shape-outside: circle(40% at 50% 45%); }
   main .triangle {
-    clip-path: polygon(95% 0, 4% 0, 49% 96%); }
+    float: right;
+    clip-path: polygon(95% 0, 4% 0, 49% 96%);
+    shape-outside: polygon(95% 0, 4% 0, 49% 96%); }
   main .polygon {
-    clip-path: polygon(33% 0, 91% 0, 67% 100%, 9% 100%); }
+    float: right;
+    clip-path: polygon(33% 0, 91% 0, 67% 100%, 9% 100%);
+    shape-outside: polygon(33% 0, 91% 0, 67% 100%, 9% 100%); }
   main .cross {
-    clip-path: polygon(0 26%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 100% 25%, 100% 57%, 65% 58%, 65% 91%, 36% 91%, 36% 57%, 0 57%); }
+    float: right;
+    clip-path: polygon(0 26%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 100% 25%, 100% 57%, 65% 58%, 65% 91%, 36% 91%, 36% 57%, 0 57%);
+    shape-outside: polygon(0 26%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 100% 25%, 100% 57%, 65% 58%, 65% 91%, 36% 91%, 36% 57%, 0 57%); }
   main section.thegallery figure {
     width: 100%;
     height: 0;
@@ -227,6 +236,7 @@ footer {
     display: none;
     justify-self: end; }
   nav ul, nav ul.open {
+    justify-content: flex-end;
     position: relative;
     display: flex;
     background-color: transparent;

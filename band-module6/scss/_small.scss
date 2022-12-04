@@ -48,7 +48,9 @@ nav {
         display: none;
     }
 
-    ul.open {display: block;}
+    ul.open {
+        display: block;
+        z-index: 1;}
 
     ul li a {
          display: block;
@@ -56,7 +58,7 @@ nav {
          font-weight: $lightWeight;
          color: rgba(255, 255, 255, 0.9);
          text-decoration: none;
-         text-align: right;
+         text-align: center;
     } // end anchors
 
     ul li.active a {background-color: darken($menuColor, 8%);}
@@ -79,13 +81,14 @@ main {
     .member-collection{
         display: flex;
         flex-wrap: wrap;
+        margin: 2em 0;;
     }
       .member{
-        flex-basis: 100%;
-        border: 1px solid #999;
+        flex-basis: 98%;
         border-radius: $cbr;
         text-align: center;
         margin: auto;
+        min-height: 644px;
       }
       img {
         padding: 1rem;
@@ -95,17 +98,24 @@ main {
 
     /* CLIPPING MASKS */
     .circle {
+        float: right;
         clip-path: circle(40% at 50% 45%);
-        shape-outside: circle(40%);
+        shape-outside: circle(40% at 50% 45%);
     }
     .triangle {
+        float: right;
         clip-path: polygon(95% 0, 4% 0, 49% 96%);
+        shape-outside: polygon(95% 0, 4% 0, 49% 96%);
     }
     .polygon{
+        float: right;
         clip-path: polygon(33% 0, 91% 0, 67% 100%, 9% 100%);
+        shape-outside: polygon(33% 0, 91% 0, 67% 100%, 9% 100%);
     }
     .cross{
+        float: right;
         clip-path: polygon(0 26%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 100% 25%, 100% 57%, 65% 58%, 65% 91%, 36% 91%, 36% 57%, 0 57%);
+        shape-outside: polygon(0 26%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 100% 25%, 100% 57%, 65% 58%, 65% 91%, 36% 91%, 36% 57%, 0 57%);
     }
 
     /* LAZY LOADING */
