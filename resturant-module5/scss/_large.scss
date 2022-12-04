@@ -6,9 +6,19 @@
     
     
     
-    nav ul {padding-left: $gutter}
-    nav li {width:auto;}
-    nav a {padding: .5rem 1rem;}
+    nav {
+        button {
+            display: none;
+          }
+          ul, ul.open{
+                margin-left: 2%;
+                display: flex;
+                justify-content: flex-end;
+          }
+        ul {padding-left: $gutter}
+     li {width:auto;}
+     a {padding: .5rem 1rem;}
+    }
     
     main figure { width: 31%;}
     

@@ -14,8 +14,10 @@
 
 
 /*----------- NAVIGATION --------------*/
-    nav ul li {width: auto;}
-    nav ul li a{padding: .5rem 1rem;}
+    nav {
+        ul li {width: auto;}
+     ul li a{padding: .5rem 1rem;}
+    }
 
 
 /*----------- MAIN --------------*/

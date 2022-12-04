@@ -1,4 +1,7 @@
-    nav li {width: 25%; float: left;}
+    nav {
+        li {width: auto;}
+        ul li a{padding: .5rem 1rem;}
+    }
     
     header{
     #header-text{ margin: 2.3em 0 0 1em; } /* top | right | bottom | left */

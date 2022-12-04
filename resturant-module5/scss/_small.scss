@@ -37,8 +37,8 @@ header {
     
 } // end of header
   
-div#navWrapper {
-    background-color: rgb(230, 56, 56);
+div.navWrapper {
+    background-color: $secondaryColor;
 }
 
 // added from module 4
