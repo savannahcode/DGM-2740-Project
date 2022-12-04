@@ -55,6 +55,10 @@ nav {
       padding: 0.5rem;
       color: rgba(255, 255, 255, 0.9);
     } //end button
+    button span:nth-child(1) {display: block;}
+    button span:nth-child(2) {display: none;}
+    button.open span:nth-child(1) {display: none;}
+    button.open span:nth-child(2) {display: block;}
   }
   nav ul {
     display: none;

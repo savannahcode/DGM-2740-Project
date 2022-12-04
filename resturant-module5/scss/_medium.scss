@@ -2,12 +2,36 @@
         li {width: auto;}
         ul li a{padding: .5rem 1rem;}
     }
+
+    /* NAV */
+    nav {
+        button {
+          display: none;
+        }
+        ul,
+        ul.open {
+          margin-left: 2%;
+          display: flex;
+          justify-content: flex-start;
+        }
+        ul {
+          padding-left: $gutter;
+        }
+        li {
+          width: auto;
+        }
+        a {
+          padding: 0.5rem 1rem;
+        }
+      }
     
+    /* HEADER */
     header{
     #header-text{ margin: 1.3em 0 1em 1em; } /* top | right | bottom | left */
     h2 {display: block;}
     } // end of header
     
+    /* MAIN */
     main figure {
         float: right; 
         width: 48%; 
