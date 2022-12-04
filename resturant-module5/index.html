@@ -1,105 +1,202 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="description" content="Fill Me In">
-<meta name="author" content="John Doe">
-<title>Resturant</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Fill Me In" />
+    <meta name="author" content="John Doe" />
+    <title>Resturant</title>
 
-<!-- font of quicksand from Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
+    <!-- font of quicksand from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
+    <!-- STYLE SHEETS -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Google Fonts  link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body>
+    <!-- HEADER -->
+    <div id="headerWrapper">
+      <header class="clearfix">
+        <figure class="logo">
+          <img
+            src="images/logo0.png"
+            alt="logo"
+            srcset="
+              images/logo1.png 1x,
+              images/logo2.png 2x,
+              images/logo3.png 3x
+            "
+          />
+        </figure>
 
+        <div id="header-text">
+          <h1>Tacos Galore</h1>
+          <h2>Delicious, all-you-can-eat Mexican cuisine</h2>
+        </div>
+      </header>
+    </div>
 
-<!-- STYLE SHEETS -->
-<link href="css/styles.css" rel="stylesheet">
-<!-- Google Fonts  link-->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
-  rel="stylesheet">
-    
-</head>
+    <!-- NAV ELEMENTS -->
+    <div class="navWrapper">
+      <nav class="clearfix">
+        <button id="hamburgerBtn"><span>&#9776;</span><span>x</span></button>
+        <ul id="primaryNav">
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Locations</a></li>
+          <li class="active"><a href="#">Our Founder</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
-<body>
+    <!-- MAIN -->
+    <div id="mainWrapper">
+      <main>
+        <picture class="hero">
+          <source
+            media="(max-width: 450px)"
+            srcset="images/hero-tacos/hero-tacos450.jpeg"
+          />
+          <source
+            media="(max-width: 600px)"
+            srcset="images/hero-tacos/hero-tacos600.jpeg"
+          />
+          <source
+            media="(max-width: 750px)"
+            srcset="images/hero-tacos/hero-tacos750.jpeg"
+          />
+          <source
+            media="(max-width: 900px)"
+            srcset="images/hero-tacos/hero-tacos900.jpeg"
+          />
+          <source
+            media="(max-width: 1050px)"
+            srcset="images/hero-tacos/hero-tacos1050.jpeg"
+          />
+          <source
+            media="(max-width: 1200px)"
+            srcset="images/hero-tacos/hero-tacos1200.jpeg"
+          />
+          <img
+            src="images/hero-tacos/hero-tacos1200.jpeg"
+            alt="Hero Tacos Image"
+          />
+        </picture>
 
-  <!-- HEADER --> 
-  <div id="headerWrapper">
-<header class="clearfix">
+        <h1>Our Founder</h1>
 
-  <figure class="logo">
-    <img src="images/logo0.png" alt="logo"
-    srcset="images/logo1.png 1x, 
-    images/logo2.png 2x, 
-    images/logo3.png 3x">
-  </figure> 
-  
-  <div id="header-text">
-  <h1>Tacos Galore</h1>
-  <h2>Delicious, all-you-can-eat Mexican cuisine</h2>
-  </div>
-</header>
-</div>
+        <figure>
+          <picture class="founder">
+            <source
+              media="(max-width: 600px)"
+              srcset="images/portraits/portrait300.jpeg"
+            />
+            <source
+              media="(max-width: 900px)"
+              srcset="images/portraits/portrait450.jpeg"
+            />
+            <source
+              media="(max-width: 1200px)"
+              srcset="images/portraits/portrait600.jpeg"
+            />
+            <img
+              src="images/portraits/portrait600.jpeg"
+              alt="Founder Portrait"
+            />
+          </picture>
+          <figcaption>The Beautiful Founder of our resturant</figcaption>
+        </figure>
 
-<!-- NAV ELEMENTS -->
-<div class="navWrapper">
-  <nav class="clearfix">
-    <button id="hamburgerBtn"><span>&#9776;</span><span>x</span></button>
-    <ul id="primaryNav">
-      <li><a href="#">Menu</a></li>
-      <li><a href="#">Locations</a></li>
-      <li class="active"><a href="#">Our Founder</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-</div>
+        <p>
+          Aliquam est dignissim dictumst dictumst porta, nisi ridiculus massa
+          odio platea tincidunt? Porttitor pulvinar dolor porta, odio pid, magna
+          duis nunc pid, ac, tincidunt? Vut habitasse tristique, sed sed dis
+          tincidunt amet sit, ac urna, proin dolor magna, adipiscing, elementum
+          integer, facilisis ac nunc, mauris! Amet odio egestas dictumst
+          ultricies? Ultrices aliquam, et ac in vut vel sed massa ultricies!
+          Placerat cum rhoncus ut! Pid tincidunt, risus non turpis cum vel lorem
+          nec porta elementum. Mauris enim et, placerat integer! Pulvinar velit
+          porttitor elementum? Nec, vut eu mid dictumst enim rhoncus non ac enim
+          scelerisque amet dictumst porttitor, ultricies nisi pulvinar, dolor
+          diam amet! Augue, etiam amet duis pulvinar nunc, porta cum ac
+          ultrices, lundium mauris et! Tortor. Vel? Diam. Purus nascetur augue
+          platea ac! Habitasse dapibus lorem cursus a lorem, in dignissim et,
+          elementum, nisi et montes magna sed tortor, dapibus pellentesque etiam
+          mattis adipiscing, et proin in, magna pid, mid Montes aenean proin mus
+          hac porta rhoncus pid? Dictumst nisi placerat? Rhoncus, cursus sed
+          enim! Aliquam, pulvinar? Etiam purus vut ridiculus, aliquam enim
+          pellentesque mauris ac nunc! Porta porttitor, in , non. Tempor sed
+          tortor vel, etiam phasellus augue duis nunc integer amet lundium
+          ultrices aliquet? Ultrices adipiscing! Dictumst. Aliquet, auctor ut
+          tortor.
+          Aliquam est dignissim dictumst dictumst porta, nisi ridiculus massa
+          odio platea tincidunt? Porttitor pulvinar dolor porta, odio pid, magna
+          duis nunc pid, ac, tincidunt? Vut habitasse tristique, sed sed dis
+          tincidunt amet sit, ac urna, proin dolor magna, adipiscing, elementum
+          integer, facilisis ac nunc, mauris! Amet odio egestas dictumst
+          ultricies? Ultrices aliquam, et ac in vut vel sed massa ultricies!
+          Placerat cum rhoncus ut! Pid tincidunt, risus non turpis cum vel lorem
+          nec porta elementum. Mauris enim et, placerat integer! Pulvinar velit
+          porttitor elementum? Nec, vut eu mid dictumst enim rhoncus non ac enim
+          scelerisque amet dictumst porttitor, ultricies nisi pulvinar, dolor
+          diam amet! Augue, etiam amet duis pulvinar nunc, porta cum ac
+          ultrices, lundium mauris et! Tortor. Vel? Diam. Purus nascetur augue
+          platea ac! Habitasse dapibus lorem cursus a lorem, in dignissim et,
+          elementum, nisi et montes magna sed tortor, dapibus pellentesque etiam
+          mattis adipiscing, et proin in, magna pid, mid Montes aenean proin mus
+          hac porta rhoncus pid? Dictumst nisi placerat? Rhoncus, cursus sed
+          enim! Aliquam, pulvinar? Etiam purus vut ridiculus, aliquam enim
+          pellentesque mauris ac nunc! Porta porttitor, in , non. Tempor sed
+          tortor vel, etiam phasellus augue duis nunc integer amet lundium
+          ultrices aliquet? Ultrices adipiscing! Dictumst. Aliquet, auctor ut
+          tortor.
+          Aliquam est dignissim dictumst dictumst porta, nisi ridiculus massa
+          odio platea tincidunt? Porttitor pulvinar dolor porta, odio pid, magna
+          duis nunc pid, ac, tincidunt? Vut habitasse tristique, sed sed dis
+          tincidunt amet sit, ac urna, proin dolor magna, adipiscing, elementum
+          integer, facilisis ac nunc, mauris! Amet odio egestas dictumst
+          ultricies? Ultrices aliquam, et ac in vut vel sed massa ultricies!
+          Placerat cum rhoncus ut! Pid tincidunt, risus non turpis cum vel lorem
+          nec porta elementum. Mauris enim et, placerat integer! Pulvinar velit
+          porttitor elementum? Nec, vut eu mid dictumst enim rhoncus non ac enim
+          scelerisque amet dictumst porttitor, ultricies nisi pulvinar, dolor
+          diam amet! Augue, etiam amet duis pulvinar nunc, porta cum ac
+          ultrices, lundium mauris et! Tortor. Vel? Diam. Purus nascetur augue
+          platea ac! Habitasse dapibus lorem cursus a lorem, in dignissim et,
+          elementum, nisi et montes magna sed tortor, dapibus pellentesque etiam
+          mattis adipiscing, et proin in, magna pid, mid Montes aenean proin mus
+          hac porta rhoncus pid? Dictumst nisi placerat? Rhoncus, cursus sed
+          enim! Aliquam, pulvinar? Etiam purus vut ridiculus, aliquam enim
+          pellentesque mauris ac nunc! Porta porttitor, in , non. Tempor sed
+          tortor vel, etiam phasellus augue duis nunc integer amet lundium
+          ultrices aliquet? Ultrices adipiscing! Dictumst. Aliquet, auctor ut
+          tortor.
+        </p>
+      </main>
+    </div>
+    <!-- FOOTER -->
+    <div id="footerWrapper">
+      <footer>&copy; 2022 &#x2022; Savannah Hilton &#x2022; Login</footer>
+    </div>
 
-<!-- MAIN -->
-<div id="mainWrapper">
-<main>
-  
-  <picture class="hero">
-    <img src="images/hero-museum-img.jpg" alt="Hero Museum Image" width="1600" height="339">
-  </picture>
-
-    <h1>Our Founder</h1>
-    
-    <figure>
-    <img src="images/yellow-plane.jpg" alt="Airplane">
-        <figcaption>The Founder</figcaption>
-    </figure>
-
-    <p>Aliquam est dignissim dictumst dictumst porta, nisi ridiculus massa odio platea tincidunt? Porttitor pulvinar
-      dolor porta, odio pid, magna duis nunc pid, ac, tincidunt? Vut habitasse tristique, sed sed dis tincidunt
-     amet sit, ac urna, proin dolor magna, adipiscing, elementum integer, facilisis ac nunc, mauris! Amet odio
-     egestas dictumst ultricies? Ultrices aliquam, et ac in vut vel sed massa ultricies! Placerat cum rhoncus ut!
-     Pid tincidunt, risus non turpis cum vel lorem nec porta elementum. Mauris enim et, placerat integer!
-     Pulvinar velit porttitor elementum? Nec, vut eu mid dictumst enim rhoncus non ac enim scelerisque amet
-     dictumst porttitor, ultricies nisi pulvinar, dolor diam amet! Augue, etiam amet duis pulvinar nunc, porta cum
-     ac ultrices, lundium mauris et! Tortor. Vel? Diam.
-     Purus nascetur augue platea ac! Habitasse dapibus lorem cursus a lorem, in dignissim et, elementum,
-     nisi et montes magna sed tortor, dapibus pellentesque etiam mattis adipiscing, et proin in, magna pid, mid
-     Montes aenean proin mus hac porta rhoncus pid? Dictumst nisi placerat? Rhoncus, cursus sed enim!
-     Aliquam, pulvinar? Etiam purus vut ridiculus, aliquam enim pellentesque mauris ac nunc! Porta porttitor, in
-     , non. Tempor sed tortor vel, etiam phasellus augue duis nunc integer amet lundium ultrices aliquet? Ultrices adipiscing! Dictumst. Aliquet, auctor ut tortor.</p>
-
-    
-</main>
-</div>
-<!-- FOOTER -->
-<div id="footerWrapper">
-<footer>
-&copy; 2022 &#x2022; Savannah Hilton &#x2022; Login
-</footer>
-</div>
-
-<script src="js/scripts.js"></script>
-</body>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

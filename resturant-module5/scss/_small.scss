@@ -104,10 +104,11 @@ main{display: block;
 
 p{ margin: 1em $gutter 2em$gutter;}
   
- figure{
-    margin-left: 0;
-    width: 100%;
-    img {width: 100%;} // end of figure img
+figure {
+    float: right; 
+    width: 48%; 
+    margin-left: 2%;
+    margin-bottom: .5rem;
 } // end of figure
 
  figcaption {
