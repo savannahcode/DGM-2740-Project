@@ -1,25 +1,16 @@
+header,
+nav,
+main,
+footer {
+  max-width: 1200px;
+  margin: auto;
+}
 
-    header, nav, main, footer {
-        max-width: 1200px;
-        margin:auto;
-    }
-    
-    
-    
-    nav {
-        button {
-            display: none;
-          }
-          ul, ul.open{
-                margin-left: 2%;
-                display: flex;
-                justify-content: flex-start;
-          }
-        ul {padding-left: $gutter}
-     li {width:auto;}
-     a {padding: .5rem 1rem;}
-    }
-    
-    main figure { width: 31%;}
-    
-    div.news {column-count: 3;}
+
+main figure {
+  width: 31%;
+}
+
+div.news {
+  column-count: 3;
+}
