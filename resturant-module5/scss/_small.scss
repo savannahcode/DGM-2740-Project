@@ -19,7 +19,12 @@ header {
     display: flex;
     padding: 1rem $gutter;
 
-    #header-text{ margin: 3.6em 0 0 1em; } //end of #header-text
+    figure.logo {
+        float: left;
+        margin: 0;
+    }
+
+    #header-text{ margin: 2.7em 0 .5em 1em; } //end of #header-text
         /* top | right | bottom | left */
 
     h1 {
