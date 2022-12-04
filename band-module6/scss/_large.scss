@@ -1,5 +1,5 @@
 header, main {
-    max-width: 1240px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -34,4 +34,9 @@ nav {
     ul li.active a {
         color:white
     }
+}
+
+/* MAIN STUFF GOES HERE */
+main{
+    .member {flex-basis: 23%;}
 }

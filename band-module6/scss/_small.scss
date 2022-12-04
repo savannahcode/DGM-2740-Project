@@ -75,13 +75,40 @@ main {
         color: $secondaryColor;
         font-weight: $lightWeight
     }
-    .hero {width: 100%;}
-    .hero img {
+
+    .member-collection{
+        display: flex;
+        flex-wrap: wrap;
+    }
+      .member{
+        flex-basis: 100%;
+        border: 1px solid #999;
+        border-radius: $cbr;
+        text-align: center;
+        margin: auto;
+      }
+      img {
+        padding: 1rem;
         width: 100%;
         height: auto;
+    } // end of img
+
+    /* CLIPPING MASKS */
+    .circle {
+        clip-path: circle(40% at 50% 45%);
+        shape-outside: circle(40%);
+    }
+    .triangle {
+
+    }
+    .rhombus{
+
+    }
+    .cross{
+
     }
 
-
+    /* LAZY LOADING */
     section.thegallery figure {
         width: 100%;
         height: 0;
