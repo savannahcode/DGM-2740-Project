@@ -38,27 +38,45 @@ header {
 } // end of header
   
 div#navWrapper {
-    background-color: #111;
+    background-color: rgb(230, 56, 56);
 }
 
+// added from module 4
 nav {
- ul{margin:0; padding: 0;} // end of ul
-
- li {list-style-type: none;} // end of li
-
- li.active {background-color: #333} // end of li.active
-
- a {
+    button {
+      background: transparent;
+      border: none;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      color: rgba(255, 255, 255, 0.9);
+    } //end button
+  }
+  nav ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  nav ul.open {
     display: block;
-    padding: .8rem 0; /*44px min*/
-    color: #eee;
-    text-align: center;
+  }
+  nav ul li a {
+    display: block;
+    color: #fff;
+    padding: 0.5rem 0;
     text-decoration: none;
-} // end of a
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  nav ul li a:hover {
+    background-color: lighten($menuColor, 10%);
+    color: #fff;
+  }
+  nav ul li.active a {
+    background-color: darken($menuColor, 8%);
+    color: #fff;
+  } // end of mod 4
 
- a:hover {background-color: #444;} // end of a:hover
-
-} // end nav
 
 
 main{display: block;
