@@ -109,12 +109,16 @@ header {
   display: grid;
   grid-template-columns: 51px auto;
   align-items: center;
-  padding: .5rem 2vw; }
-  header h1 {
-    font-size: 1.6rem;
+  padding: .7rem 2vw; }
+  header .header-text h1 {
+    font-size: 2.5rem;
     font-weight: 300;
     padding-left: .5rem;
     color: #cc7a26; }
+  header .header-text h2 {
+    font-size: 1.5rem;
+    padding-left: .7rem;
+    color: #265b7d; }
 
 /* NAVIGATION STUFF GOES HERE  */
 nav button {
@@ -156,20 +160,27 @@ main {
     color: #333;
     line-height: 125%; }
   main h1 {
-    padding: 1rem 2vw .5rem 2vw;
-    font-size: 1.5rem;
-    color: #265b7d;
-    font-weight: 300; }
+    padding: 1rem 2vw .3rem 2vw;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #265b7d; }
   main .member-collection {
     display: flex;
     flex-wrap: wrap;
-    margin: 2em 0; }
+    margin: 1em 0; }
   main .member {
     flex-basis: 98%;
     border-radius: 10px;
     text-align: center;
     margin: auto;
     min-height: 644px; }
+  main h2 {
+    color: #265b7d;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #cc7a26; }
+  main p {
+    font-weight: 300; }
   main img {
     padding: 1rem;
     width: 100%;
@@ -195,8 +206,9 @@ main {
     height: 0;
     padding-bottom: 58.3%;
     /* You define this doing image height / width * 100% */
-    position: relative;
-    margin: .5em; }
+    position: relative; }
+  main section.thegallery figure.lazy {
+    margin: 2em; }
   main section.thegallery figure img {
     width: 100%;
     height: auto;
@@ -217,7 +229,7 @@ footer {
 @media only screen and (min-width: 35rem) {
   /* NAVIGATION STUFF GOES HERE  */
   nav ul {
-    width: 200px; }
+    width: 250px; }
 
   /* MAIN STUFF GOES HERE*/
   main .member {
