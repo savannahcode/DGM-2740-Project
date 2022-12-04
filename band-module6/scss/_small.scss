@@ -99,13 +99,13 @@ main {
         shape-outside: circle(40%);
     }
     .triangle {
-
+        clip-path: polygon(95% 0, 4% 0, 49% 96%);
     }
-    .rhombus{
-
+    .polygon{
+        clip-path: polygon(33% 0, 91% 0, 67% 100%, 9% 100%);
     }
     .cross{
-
+        clip-path: polygon(0 26%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 100% 25%, 100% 57%, 65% 58%, 65% 91%, 36% 91%, 36% 57%, 0 57%);
     }
 
     /* LAZY LOADING */
