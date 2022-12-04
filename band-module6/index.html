@@ -43,7 +43,21 @@
 <!-- CONTENT HERE -->
     <main>
         <h1>Products</h1>
-        <p>The page name should almost exactly match the menu item. </p>
+        <section class="thegallery">
+            <figure><img alt="car" class="lazy" data-src="images/car01.jpg" /></figure>
+            <figure><img alt="car" class="lazy" data-src="images/car02.jpg" /></figure>
+            <figure><img alt="car" class="lazy" data-src="images/car03.jpg" /></figure>
+            <figure><img alt="car" class="lazy" data-src="images/car04.jpg" /></figure>
+            <figure><img alt="car" class="lazy" data-src="images/car05.jpg" /></figure>
+            <figure><img alt="car" class="lazy" data-src="images/car06.jpg" /></figure>
+            <figure><img alt="car" class="lazy" data-src="images/car07.jpg" /></figure>
+            <figure><img alt="car" class="lazy" data-src="images/car08.jpg" /></figure>
+            <figure><img alt="car" class="lazy" data-src="images/car09.jpg" /></figure>
+            <figure><img alt="car" class="lazy" data-src="images/car10.jpg" /></figure>
+
+
+
+        </section>
     </main>
     
 <!-- FOOTER HERE -->   
@@ -51,5 +65,12 @@
         &copy; 201x &bull; Paul Cheney &bull; 123-555-6789
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+    <script>
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: ".lazy",
+            threshold: 0
+});
+    </script>
 </body>
 </html>
