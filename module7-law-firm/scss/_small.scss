@@ -92,6 +92,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
 
+    .column{padding: 2vh .5vw;}
     @for $i from 0 to 12 {
       $w: ($i / 12) * 100%;
       .small-#{$i} {
@@ -99,11 +100,15 @@ main {
       }
     }
 
+    p{padding: .6em 0;}
+
     .lawyer-card{
         display: flex;
         flex-direction: column;
-        border: 1px $secondaryColor solid;
+        border: 1px lighten($secondaryColor, 30%) solid;
+        background-color: lighten($secondaryColor, 50%);
         align-items: center;
+        h2{margin:1em;}
         img{
             width: 100%;
             height: auto;
@@ -113,19 +118,41 @@ main {
             background-color: $primaryColor;
             border-radius: 5px;
             padding: .4em .7em;
-            color: lighten($primaryColor, 50%);
+            color: lighten($primaryColor, 55%);
+            margin: 1em;
         }
     }
-    .info-btn{}
+    .info-btn{
+        border: none;
+        background-color: $primaryColor;
+        color: white;
+        margin: auto;
+        padding: 1em 1em;
+        width: 100%;
+        color: lighten($primaryColor, 55%);
+        padding: 1em 0;
+        font-size: 1em;
+    }
     .blog-card{
+        background-color: lighten($secondaryColor, 50%);
         img{
-            width: 30%;
+            width: 100%;
             height: auto;
         }
+        .blog-text{margin: 1em}
+        button{
+            background-color: $primaryColor;
+            width: 100%;
+            border: none;
+            padding: .5em;
+        }
+        a{
+            text-decoration: none;
+            text-align: center;
+            color: lighten($primaryColor, 55%);
+        }
     }
-    .tip, .faq-box{
-        display: none;
-    }
+    .tip, .faq-box{display: none;}
   } // end flexed
 
   p {
@@ -163,7 +190,7 @@ footer {
     justify-content: center;
   }
   div.social a {
-    color: #fff;
+    color: lighten($secondaryColor, 55%);
     font-size: 3rem;
     padding: 1rem 0;
     margin: 0 0.3em;
@@ -171,7 +198,7 @@ footer {
   }
 
   div.social a:hover {
-    color: orange;
+    color: lighten($secondaryColor, 30%);
   }
   /* End of FONT AWESOME ICONS CODE */
 
