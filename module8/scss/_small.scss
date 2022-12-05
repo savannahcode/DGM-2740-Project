@@ -103,7 +103,6 @@ nav button {
 }
 main {
   /* CSS GRID CODE */
-  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
@@ -148,15 +147,17 @@ main {
     font-weight: $lightWeight;
   }
   figure {
+    width: 100%;
     figcaption {
       text-align: center;
       padding: 0.5em;
     }
     .hero {
       width: 100%;
+      height: auto;
     }
     .hero img {
-      width: 100%;
+      width: 2em;
       height: auto;
     }
   } // end of figure
@@ -175,3 +176,8 @@ footer {
     color: darken($primaryColor, 15%);
   }
 }
+
+img{
+    width: 100%;
+    height: auto;
+  }
