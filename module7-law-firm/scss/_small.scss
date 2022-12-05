@@ -18,10 +18,11 @@ body {
 div#headerWrapper {
     grid-row-start: 1;
     border-top: .5em $primaryColor solid;
+    background-color: lighten($secondaryColor, 50%);
 }
 header {
     display: grid;
-    grid-template-columns: 51px auto 44px;
+    grid-template-columns: 101px auto 44px;
     align-items: center;
 	padding: .5rem 2vw;
     div#phone {display: none;}
@@ -46,6 +47,7 @@ div#hamburger a, div#closex a {
 }
 
 nav{
+    background-color: lighten($primaryColor, 50%);
     height: 100vh;
     ul {border-bottom: 1px solid #eee;}
     ul li{border-top: 1px solid #eee;}
@@ -69,7 +71,7 @@ main {
 
     display: flex;
     flex-wrap: wrap;
-    
+
     @for $i from 0 to 12{
         $w:($i / 12) * 100%;
         .small-#{$i}{flex-basis: $w;} 
@@ -81,11 +83,6 @@ main {
         font-size: 1.5rem; 
         color: $secondaryColor;
         font-weight: $lightWeight
-    }
-    .hero {width: 100%;}
-    .hero img {
-        width: 100%;
-        height: auto;
     }
 } // end main
 
@@ -101,5 +98,25 @@ footer {
 	padding: 1rem 0;
 	color: #bbb;
 	text-align: center;
+    /* Start of FONT AWESOME ICONS CODE */
+div.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+div.social a {
+    color: #fff;
+    font-size: 3rem;
+    padding: 1rem 0;
+    margin: 0 .3em;
+    text-decoration: none;
+}
+
+div.social a:hover {
+    color: orange;
+}
+/* End of FONT AWESOME ICONS CODE */
+
+
 	a{color: #eee;}
 }
