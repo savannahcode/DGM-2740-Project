@@ -1,0 +1,13 @@
+/* NAVIGATION STUFF GOES HERE  */
+nav{
+    height: auto;
+    ul {
+        display: flex;
+        justify-content: end;
+        border: none;
+        li{border: none;}
+    }
+    #hamburgerBtn{
+        display: none;
+    }
+}
