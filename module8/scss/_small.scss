@@ -106,37 +106,36 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 
-  .hero {
+  figure:nth-child(1) {
     grid-column: 1 / span 2;
     grid-row: 1;
   }
-  .article {
-    .one {
+  figure:nth-child(2){
       grid-column: 1;
       grid-row: 2;
     }
-    .two {
+    figure:nth-child(3){
       grid-column: 2;
       grid-row: 2;
     }
-    .three {
+    figure:nth-child(4) {
       grid-column: 1;
       grid-row: 3;
     }
-    .four {
+    figure:nth-child(5) {
         grid-column: 2;
         grid-row: 3;
     }
-    .five {
+    figure:nth-child(6) {
         grid-column: 1;
         grid-row: 4;
     }
-    .four {
+    figure:nth-child(7) {
         grid-column: 2;
         grid-row: 4;
     }
-  } // end of article
   /* End of CSS GRID CODE */
   p {
     padding: 0.5rem 2vw;
