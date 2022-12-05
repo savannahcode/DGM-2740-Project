@@ -105,6 +105,8 @@ main {
   /* CSS GRID CODE */
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: .5em;
+  padding: .5em;
 
   figure:nth-child(1) {
     grid-column: 1 / span 2;
@@ -156,8 +158,8 @@ main {
       width: 100%;
       height: auto;
     }
-    .hero img {
-      width: 2em;
+    img {
+      width: 100%;
       height: auto;
     }
   } // end of figure
@@ -176,8 +178,3 @@ footer {
     color: darken($primaryColor, 15%);
   }
 }
-
-img{
-    width: 100%;
-    height: auto;
-  }
