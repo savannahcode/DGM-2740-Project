@@ -138,9 +138,8 @@ main {
         height: 0;
         padding-bottom: 58.3%; /* You define this doing image height / width * 100% */
         position: relative;
+        margin: 2em;
     }
-
-    section.thegallery figure.lazy{margin: 2em;}
     
     section.thegallery figure img {
         width: 100%;
