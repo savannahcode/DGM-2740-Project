@@ -8,8 +8,14 @@ header, nav, main {
 
 /* MAIN STUFF GOES HERE*/
 main{
+    .flexed{
     @for $i from 0 to 12{
         $w:($i / 12) * 100%;
         .large-#{$i}{flex-basis: $w;} 
+
+        .tip, .faq-box{
+            display: block;
+        }
     }
+}
 }
