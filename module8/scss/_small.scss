@@ -103,7 +103,9 @@ nav button {
 }
 main {
   /* CSS GRID CODE */
+  width: 100%;
   display: grid;
+  grid-template-columns: 1fr 1fr;
 
   .hero {
     grid-column: 1 / span 2;

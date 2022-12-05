@@ -8,7 +8,8 @@ main{
     margin: auto;
 
     /* CSS GRID CODE */
-  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
 
   figure{
   .hero {
