@@ -1,122 +1,152 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 
 /*  apply a natural box layout model to all elements  */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 /* BODY  */
 body {
-    display: grid;
-	font-family: $defaultFont;
-	font-size: 16px;
-	font-weight: $lightWeight;
-    min-width: 320px;
+  display: grid;
+  font-family: $defaultFont;
+  font-size: 16px;
+  font-weight: $lightWeight;
+  min-width: 320px;
 }
-
 
 /* HEADER  */
 div#headerWrapper {
-    grid-row-start: 1;
-    border-top: .5em $primaryColor solid;
-    background-color: lighten($secondaryColor, 50%);
+  grid-row-start: 1;
+  border-top: 0.5em $primaryColor solid;
+  background-color: lighten($secondaryColor, 50%);
 }
 header {
-    display: grid;
-    grid-template-columns: 101px auto 44px;
-    align-items: center;
-	padding: .5rem 2vw;
-    div#phone {display: none;}
-	h1 {
-        font-size: 1.6rem;
-        font-weight: $lightWeight;
-        padding-left: .5rem;
-        color: $primaryColor;
-    }
+  display: grid;
+  grid-template-columns: 101px auto 44px;
+  align-items: center;
+  padding: 0.5rem 2vw;
+  div#phone {
+    display: none;
+  }
+  h1 {
+    font-size: 1.6rem;
+    font-weight: $lightWeight;
+    padding-left: 0.5rem;
+    color: $primaryColor;
+  }
 } // end header
 
 /* NAVIGATION STUFF GOES HERE  */
-div#navWrapper {grid-row-start: 4;}
-
-div#hamburger a, div#closex a {
-        display: block;
-        padding: .8rem 2vw;
-        font-size: 1.5rem;
-        color: #333;
-        text-decoration: none;
-        text-align: right;
+div#navWrapper {
+  grid-row-start: 4;
 }
 
-nav{
-    background-color: lighten($primaryColor, 50%);
-    height: 100vh;
-    ul {border-bottom: 1px solid #eee;}
-    ul li{border-top: 1px solid #eee;}
-    ul li a{
-        display: block;
-        color: #333;
-        padding: .9rem 2vw;
-        text-decoration: none;
-        text-align: right;
-    } // end anchors
-    ul li a:hover {color: $primaryColor}
-    ul li.active a {background-color: lighten($primaryColor, 45%);}
+div#hamburger a,
+div#closex a {
+  display: block;
+  padding: 0.8rem 2vw;
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+  text-align: right;
+}
+
+nav {
+  background-color: lighten($primaryColor, 50%);
+  height: 100vh;
+  ul {
+    border-bottom: 1px solid #eee;
+  }
+  ul li {
+    border-top: 1px solid #eee;
+  }
+  ul li a {
+    display: block;
+    color: #333;
+    padding: 0.9rem 2vw;
+    text-decoration: none;
+    text-align: right;
+  } // end anchors
+  ul li a:hover {
+    color: $primaryColor;
+  }
+  ul li.active a {
+    background-color: lighten($primaryColor, 45%);
+  }
 } // end nav
 
-
-
 /* MAIN  */
-div#mainWrapper {grid-row-start: 2;}
+div#mainWrapper {
+  grid-row-start: 2;
+}
 
 main {
-
+  .flexed {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 
-    @for $i from 0 to 12{
-        $w:($i / 12) * 100%;
-        .small-#{$i}{flex-basis: $w;} 
+    @for $i from 0 to 12 {
+      $w: ($i / 12) * 100%;
+      .small-#{$i} {
+        flex-basis: $w;
+      }
     }
-
- 	p {padding: .5rem 2vw; color: #333; line-height: 125%;}
-	h1 {
-        padding: 1rem 2vw .5rem 2vw; 
-        font-size: 1.5rem; 
-        color: $secondaryColor;
-        font-weight: $lightWeight
-    }
+  }
+  p {
+    padding: 0.5rem 2vw;
+    color: #333;
+    line-height: 125%;
+  }
+  h1 {
+    padding: 1rem 2vw 0.5rem 2vw;
+    font-size: 1.5rem;
+    color: $secondaryColor;
+    font-weight: $lightWeight;
+  }
+  h2 {
+    font-size: 1.2em;
+    font-weight: $lightWeight;
+    color: $primaryColor;
+  }
 } // end main
-
-
 
 /* FOOTER  */
 #footerWrapper {
-    grid-row-start: 3;
-    background-color: #1b1b1b; 
+  grid-row-start: 3;
+  background-color: #1b1b1b;
 }
 footer {
-    font-size: .85rem;
-	padding: 1rem 0;
-	color: #bbb;
-	text-align: center;
-    /* Start of FONT AWESOME ICONS CODE */
-div.social {
+  font-size: 0.85rem;
+  padding: 1rem 0;
+  color: #bbb;
+  text-align: center;
+  /* Start of FONT AWESOME ICONS CODE */
+  div.social {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-div.social a {
+  }
+  div.social a {
     color: #fff;
     font-size: 3rem;
     padding: 1rem 0;
-    margin: 0 .3em;
+    margin: 0 0.3em;
     text-decoration: none;
-}
+  }
 
-div.social a:hover {
+  div.social a:hover {
     color: orange;
-}
-/* End of FONT AWESOME ICONS CODE */
+  }
+  /* End of FONT AWESOME ICONS CODE */
 
-
-	a{color: #eee;}
+  a {
+    color: #eee;
+  }
 }
