@@ -21,6 +21,7 @@ header {
     grid-template-columns: 51px auto 44px;
     align-items: center;
 	padding: .5rem 2vw;
+    div#phone {display: none;}
 	h1 {
         font-size: 1.6rem;
         font-weight: $lightWeight;
