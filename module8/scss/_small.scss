@@ -1,126 +1,177 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 
 /*  apply a natural box layout model to all elements  */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 /* BODY  */
 body {
-	font-family: $defaultFont;
-	font-size: 16px;
-	font-weight: $lightWeight;
-    min-width: 320px;
+  font-family: $defaultFont;
+  font-size: 16px;
+  font-weight: $lightWeight;
+  min-width: 320px;
 }
-
 
 /* HEADER  */
-#headerWrapper{
-    background-color: $primaryColor;
+#headerWrapper {
+  background-color: $primaryColor;
 }
 header {
-    display: grid;
-    grid-template-columns: 101px auto;
-    align-items: center;
-	padding: .5rem 2vw;
+  display: grid;
+  grid-template-columns: 101px auto;
+  align-items: center;
+  padding: 0.5rem 2vw;
 } // end header
 
 /* NAVIGATION STUFF GOES HERE  */
-#navWrapper{background-color: $secondaryColor;}
+#navWrapper {
+  background-color: $secondaryColor;
+}
 
 nav {
-    ul{
-        display: none;
-        margin: 0;
-        padding: 0;
-    }
-    ul li.active a{background-color: rgba(225, 255, 255, 0.25);}
-    ul li a{
-        text-align: center;
-        display: block;
-        padding: .75rem 2vw;
-        font-size: 1.1rem;
-        color: darken($primaryColor, 10%);
-        text-decoration: none;
-    }
-    ul li a:hover {
-        background-color: rgba(0, 0, 0, 0.25);
-    }
-    ul.open{display: block;}
+  ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul li.active a {
+    background-color: rgba(225, 255, 255, 0.25);
+  }
+  ul li a {
+    text-align: center;
+    display: block;
+    padding: 0.75rem 2vw;
+    font-size: 1.1rem;
+    color: darken($primaryColor, 10%);
+    text-decoration: none;
+  }
+  ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+  ul.open {
+    display: block;
+  }
 }
 
-nav button{
-    position: relative;
-    height: 44px;
-    width: 44px;
-    background: none;
-    border: none;
-    .line{
-        position: absolute;
-        height: 2px;
-        width: 60%;
-        left: 20%;
-        background-color: darken($primaryColor, 10%);;
-        transition: all .3s ease;
-    }
-    .top{top: 29%}
-    .middle{top:48%}
-    .bottom{top:67%}
+nav button {
+  position: relative;
+  height: 44px;
+  width: 44px;
+  background: none;
+  border: none;
+  .line {
+    position: absolute;
+    height: 2px;
+    width: 60%;
+    left: 20%;
+    background-color: darken($primaryColor, 10%);
+    transition: all 0.3s ease;
+  }
+  .top {
+    top: 29%;
+  }
+  .middle {
+    top: 48%;
+  }
+  .bottom {
+    top: 67%;
+  }
 } // end button
 
-#hamburgerBtn.open{
-    .top{
-        transform: rotate(45deg);
-        top: 48%;
-    }
-    .middle, .bottom{
-        transform: rotate(-45deg);
-        top: 48%;
-    }
+#hamburgerBtn.open {
+  .top {
+    transform: rotate(45deg);
+    top: 48%;
+  }
+  .middle,
+  .bottom {
+    transform: rotate(-45deg);
+    top: 48%;
+  }
 }
 
-
-
 /* MAIN  */
-#mainWrapper{background-color: lighten($primaryColor, 50%);}
+#mainWrapper {
+  background-color: lighten($primaryColor, 50%);
+}
 main {
-    /* CSS GRID CODE */
-    display: grid;
-    grid-gap: 2px;
-    p:nth-child(1){
-        grid-column: 1 / span 2;
-        grid-row: 1;
+  /* CSS GRID CODE */
+  display: grid;
+
+  .hero {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  .article {
+    .one {
+      grid-column: 1;
+      grid-row: 2;
     }
-    p:nth-child(2){
-        grid-column: 1;
-        grid-row: 2;
+    .two {
+      grid-column: 2;
+      grid-row: 2;
     }
-    p:nth-child(3){
+    .three {
+      grid-column: 1;
+      grid-row: 3;
+    }
+    .four {
         grid-column: 2;
-        grid-row: 2;
+        grid-row: 3;
     }
-    /* End of CSS GRID CODE */
- 	p {padding: .5rem 2vw; color: #333; line-height: 125%;}
-	h1 {
-        padding: 1rem 2vw .5rem 2vw; 
-        font-size: 1.5rem; 
-        color: $secondaryColor;
-        font-weight: $lightWeight
+    .five {
+        grid-column: 1;
+        grid-row: 4;
     }
-    .hero {width: 100%;}
+    .four {
+        grid-column: 2;
+        grid-row: 4;
+    }
+  } // end of article
+  /* End of CSS GRID CODE */
+  p {
+    padding: 0.5rem 2vw;
+    color: #333;
+    line-height: 125%;
+  }
+  h1 {
+    padding: 1rem 2vw 0.5rem 2vw;
+    font-size: 1.5rem;
+    color: $secondaryColor;
+    font-weight: $lightWeight;
+  }
+  figure {
+    figcaption {
+      text-align: center;
+      padding: 0.5em;
+    }
+    .hero {
+      width: 100%;
+    }
     .hero img {
-        width: 100%;
-        height: auto;
+      width: 100%;
+      height: auto;
     }
+  } // end of figure
 } // end main
 
-
-
 /* FOOTER  */
-#footerWrapper {background-color: lighten($secondaryColor, 10%); }
+#footerWrapper {
+  background-color: lighten($secondaryColor, 10%);
+}
 footer {
-    font-size: .85rem;
-	padding: 1rem 0;
-	color: darken($primaryColor, 10%);;
-	text-align: center;
-	a{color: darken($primaryColor, 15%);}
+  font-size: 0.85rem;
+  padding: 1rem 0;
+  color: darken($primaryColor, 10%);
+  text-align: center;
+  a {
+    color: darken($primaryColor, 15%);
+  }
 }
