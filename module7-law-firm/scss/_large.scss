@@ -9,3 +9,11 @@ nav ul li a {
     border-radius: 10px;
     margin: .5rem 0;
 }
+
+/* MAIN STUFF GOES HERE*/
+main{
+    @for $i from 0 to 12{
+        $w:($i / 12) * 100%;
+        .large-#{$i}{flex-basis: $w;} 
+    }
+}
