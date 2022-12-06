@@ -1,163 +1,198 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Plan Your Visit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/styles.css"
+    />
+    <!-- Swiper stylesheet-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap"rel="stylesheet"/>
+  </head>
 
-<head>
-	<meta charset="utf-8"/>
-	<title>Plan Your Visit</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"/>
-<!-- Swiper stylesheet-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-<!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
+  <body>
+    <div id="headerWrapper">
+      <header>
+        <h1>Design Thinking</h1>
+      </header>
+    </div>
+    <!-- end header wrapper -->
 
-</head>
-
-<body>
-<div id="headerWrapper">
-	<header>
-		<h1>Design Thinking</h1>
-	</header>
-</div><!-- end header wrapper -->
-
-    
-    
-<div id="navWrapper">
-    <nav>
+    <div id="navWrapper">
+      <nav>
         <button id="hamburgerBtn">&#9776;</button>
-        <ul id="#primaryNav">
-        <li class="active"><a href="#">Visit</a>
-        <li class="parent"><a href="#">Deparments</a>
+        <ul id="primaryNav">
+          <li class="active"><a href="#">Visit</a></li>
+          <li class="parent">
+            <a href="#">Deparments</a>
             <ul>
-                <li><a href="#">Land Fill</a></li>
-                <li><a href="#">Police</a></li>
-                <li><a href="#">Parks and Rec</a></li>
+              <li><a href="#">Land Fill</a></li>
+              <li><a href="#">Police</a></li>
+              <li><a href="#">Parks and Rec</a></li>
             </ul>
-        </li>
-        <li class="parent"><a href="#">Services</a>
-            <ul>
-                <li><a href="#">Places to Stay</a></li>
-                <li><a href="#">Walk the Red Line</a></li>
-                <li><a href="#">Pass to the City</a></li>
-                <li><a href="#">Fine Dining</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Pay Bils</a></li>
-        <li><a href="#">Meetings</a></li>
-        <li><a href="#">Help</a></li>
-    </ul>
-    </nav>
-</div> <!-- end nav wrapper -->
+          </li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Pay Bils</a></li>
+          <li><a href="#">Meetings</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- end nav wrapper -->
 
-<div id="mainWrapper">
-    <main>
-
+    <div id="mainWrapper">
+      <main>
         <!-- Slider main container -->
-<div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">
-        <picture>
-            <source srcset="images/fenway-park-mobile.jpg" media="(max-width: 28.12rem)">
-            <source srcset="images/fenway-park.jpg" media="(min-width: 28.12rem)">
-            <img src="images/fenway-park.jpg" alt="Fenway Park">
-        </picture>
-        <p>Fenway Park</p>
-    </div>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="images/fenway-park-mobile.jpg"
+                  media="(max-width: 28.12rem)"
+                />
+                <source
+                  srcset="images/fenway-park.jpg"
+                  media="(min-width: 28.12rem)"
+                />
+                <img src="images/fenway-park.jpg" alt="Fenway Park" />
+              </picture>
+              <p>Fenway Park</p>
+            </div>
 
-      <div class="swiper-slide">
-        <picture>
-            <source srcset="images/sky-water-mobile.jpg" media="(max-width: 28.12rem)">
-            <source srcset="images/sky-water.jpg" media="(min-width: 28.12rem)">
-            <img src="images/sky-water.jpg" alt="Boston Sky and Water">
-        </picture>
-        <p>Boston Sky and Water</p>
-    </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="images/sky-water-mobile.jpg"
+                  media="(max-width: 28.12rem)"
+                />
+                <source
+                  srcset="images/sky-water.jpg"
+                  media="(min-width: 28.12rem)"
+                />
+                <img src="images/sky-water.jpg" alt="Boston Sky and Water" />
+              </picture>
+              <p>Boston Sky and Water</p>
+            </div>
 
-      <div class="swiper-slide">
-        <picture>
-            <source srcset="images/statue-mobile.jpg" media="(max-width: 28.12rem)">
-            <source srcset="images/statue.jpg" media="(min-width: 28.12rem)">
-            <img src="images/statue.jpg" alt="Boston Historical Statue">
-        </picture>
-        <p>Boston Historical Statue</p>
-    </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="images/statue-mobile.jpg"
+                  media="(max-width: 28.12rem)"
+                />
+                <source
+                  srcset="images/statue.jpg"
+                  media="(min-width: 28.12rem)"
+                />
+                <img src="images/statue.jpg" alt="Boston Historical Statue" />
+              </picture>
+              <p>Boston Historical Statue</p>
+            </div>
 
-      <div class="swiper-slide">
-        <picture>
-            <source srcset="images/streets-mobile.jpg" media="(max-width: 28.12rem)">
-            <source srcset="images/streets.jpg" media="(min-width: 28.12rem)">
-            <img src="images/streets.jpg" alt="Boston Streets">
-        </picture>
-        <p>Boston Streets</p>
-    </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="images/streets-mobile.jpg"
+                  media="(max-width: 28.12rem)"
+                />
+                <source
+                  srcset="images/streets.jpg"
+                  media="(min-width: 28.12rem)"
+                />
+                <img src="images/streets.jpg" alt="Boston Streets" />
+              </picture>
+              <p>Boston Streets</p>
+            </div>
 
-      <div class="swiper-slide">
-        <picture>
-            <source srcset="images/water-mobile.jpg" media="(max-width: 28.12rem)">
-            <source srcset="images/water.jpg" media="(min-width: 28.12rem)">
-            <img src="images/water.jpg" alt="Boston Water">
-        </picture>
-        <p>Boston Water</p>
-    </div>
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
-  <!-- End of slider container-->
-
-  <div id="plan-visit">
-  <h2>Plan Your Visit</h2>
-  <div class="boxes">
-
-    <div class="box">
-        <img src="images/placeholder.jpg" alt="Background Image">
-        <div class="text-over">
-            <i class="fa-solid fa-hotel"></i>
-            <p>PLACES TO STAY</p>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="images/water-mobile.jpg"
+                  media="(max-width: 28.12rem)"
+                />
+                <source
+                  srcset="images/water.jpg"
+                  media="(min-width: 28.12rem)"
+                />
+                <img src="images/water.jpg" alt="Boston Water" />
+              </picture>
+              <p>Boston Water</p>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
         </div>
-    </div>
+        <!-- End of slider container-->
 
-    <div class="box">
-        <img src="images/placeholder.jpg" alt="Background Image">
-        <div class="text-over">
-            <i class="fa-solid fa-person-walking"></i>
-            <p>WALK THE RED LINE</p>
+        <div id="plan-visit">
+          <h2>Plan Your Visit</h2>
+          <div class="boxes">
+            <div class="box">
+              <img src="images/placeholder.jpg" alt="Background Image" />
+              <div class="text-over">
+                <i class="fa-solid fa-hotel"></i>
+                <p>PLACES TO STAY</p>
+              </div>
+            </div>
+
+            <div class="box">
+              <img src="images/placeholder.jpg" alt="Background Image" />
+              <div class="text-over">
+                <i class="fa-solid fa-person-walking"></i>
+                <p>WALK THE RED LINE</p>
+              </div>
+            </div>
+
+            <div class="box">
+              <img src="images/placeholder.jpg" alt="Background Image" />
+              <div class="text-over">
+                <i class="fa-solid fa-ticket"></i>
+                <p>PASS TO THE CITY</p>
+              </div>
+            </div>
+
+            <div class="box">
+              <img src="images/placeholder.jpg" alt="Background Image" />
+              <div class="text-over">
+                <i class="fa-solid fa-utensils"></i>
+                <p>FINE DINING</p>
+              </div>
+            </div>
+          </div>
+          <!-- End of boxes-->
         </div>
+        <!-- End of #plan-visit -->
+      </main>
     </div>
+    <!-- end main wrapper -->
 
-    <div class="box">
-        <img src="images/placeholder.jpg" alt="Background Image">
-        <div class="text-over">
-            <i class="fa-solid fa-ticket"></i>
-            <p>PASS TO THE CITY</p>
-        </div>
+    <div id="footerWrapper">
+      <footer>
+        <p>
+          &#169; 2017 • City of Boston &#8226; Phone 1-800-555-1234 &#8226;
+          Login
+        </p>
+      </footer>
     </div>
+    <!-- end footer wrapper -->
 
-    <div class="box">
-        <img src="images/placeholder.jpg" alt="Background Image">
-        <div class="text-over">
-            <i class="fa-solid fa-utensils"></i>
-            <p>FINE DINING</p>
-        </div>
-    </div>
-  </div> <!-- End of boxes-->
-  </div> <!-- End of #plan-visit -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/77eefe8645.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 
-    </main>
-</div><!-- end main wrapper -->
-    
-<div id="footerWrapper">
-    <footer>
-        <p>&#169; 2017 • City of Boston &#8226; Phone 1-800-555-1234 &#8226; Login</p>
-    </footer>
-</div> <!-- end footer wrapper -->
-   
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="js/scripts.js"></script>
-<script src="https://kit.fontawesome.com/77eefe8645.js" crossorigin="anonymous"></script>
-</body>
-</html> 
+  </body>
+</html>

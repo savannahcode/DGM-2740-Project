@@ -17,5 +17,5 @@ const swiper = new Swiper('.swiper', {
 const hb = document.querySelector('#hamburgerBtn');
 
 hb.addEventListener('click', () => {
-    document.querySelector('#primaryNav').classList.toggle('open')
-});
+    document.querySelector('#primaryNav').classList.toggle('open');
+})
