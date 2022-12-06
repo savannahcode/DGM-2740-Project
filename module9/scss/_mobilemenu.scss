@@ -48,8 +48,8 @@ nav button {
 	/* Submenus – optional .parent class indicates dropdowns */
 	#primaryNav > li:hover > a {background: rgba(0,0,0,.5);}
 	#primaryNav li.parent > a:after {
-        font-size: .75rem;
-		content: "\25BC";
+        font-size: 1rem;
+		content: "\25EE";
 		color: rgba(255,255,255,.5);
 		float: right;
 	}

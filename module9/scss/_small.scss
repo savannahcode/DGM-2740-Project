@@ -21,15 +21,17 @@ body {
 
 /* HEADER  */
 header {
-  display: grid;
-  grid-template-columns: 51px auto;
-  align-items: center;
-  padding: 0.5rem 2vw;
-  h1 {
+    padding: 1rem;
+  h1{
     font-size: 1.6rem;
     font-weight: $lightWeight;
-    padding-left: 0.5rem;
     color: $primaryColor;
+    margin-bottom: .2em;
+  }
+  h2{
+    color: $secondaryColor;
+    font-size: 1em;
+    font-weight: $lightWeight;
   }
 } // end header
 
