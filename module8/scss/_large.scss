@@ -1,12 +1,10 @@
-
-/* NAVIGATION STUFF GOES HERE  */
-
+main, footer{
+    max-width: 80rem;
+    margin: auto;
+}
 
 /* MAIN STUFF GOES HERE */
 main{
-    max-width: 80rem;
-    margin: auto;
-
     /* CSS GRID CODE */
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
@@ -40,3 +38,8 @@ main{
     }
   /* End of CSS GRID CODE */
 } // encd of main
+
+/* FOOTER STUFF HERE*/
+footer{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
