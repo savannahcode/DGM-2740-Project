@@ -6,7 +6,8 @@
 	<title>Navigation Example</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"/>
-
+<!-- Swiper stylesheet-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,21 +39,22 @@
 
 <div id="mainWrapper">
     <main>
-        <picture class="hero">
-            <img src="images/hero.webp" width="1600" height="600">
-        </picture>
         
-        <h1>Best Practices</h1>
-        <p>Usability testing refers to evaluating a service or product by testing it with web users. Typically, during a testing, participants will try to complete similar tasks while observers watch, listen, and record the screen.  The outcome is to identify problems with the design, collect qualitative and quantitative data, and determine how well the participant's like product.</p>
-
-        <p>Competently myocardinate cross-media infomediaries via end-to-end architectures. Enthusiastically implement end-to-end functionalities vis-a-vis excellent strategic theme areas. Conveniently supply enterprise action items with integrated innovation. Authoritatively cultivate sustainable portals for orthogonal core competencies. Distinctively coordinate team driven portals rather than synergistic processes.</p>
-
-        <p>Appropriately simplify enterprise information via leveraged total linkage. Progressively grow installed base infrastructures without open-source technologies. Distinctively embrace mission-critical internal or "organic" sources after competitive imperatives. Professionally whiteboard state of the art models through high-payoff expertise. Authoritatively exploit transparent users through virtual channels.</p>
-
-        <p>Interactively transition user-centric web services without scalable collaboration and idea-sharing. Holisticly restore next-generation data before seamless expertise. Monotonectally grow synergistic synergy without bricks-and-clicks ROI. Uniquely optimize 24/365 convergence after integrated synergy. Distinctively synthesize high-quality methodologies for performance based bandwidth.</p>
-
-        <p>Intrinsicly simplify transparent sources rather than principle-centered solutions. Phosfluorescently engineer world-class technologies before scalable markets. Dynamically myocardinate.</p>
-
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="images/fenway-park.jpg" alt="Fenway Park"></div>
+      <div class="swiper-slide"><img src="images/sky-water.jpg" alt="Boston Sky and Water"></div>
+      <div class="swiper-slide"><img src="images/statue.jpg" alt="Boston Historical Statue"></div>
+      <div class="swiper-slide"><img src="images/streets.jpg" alt="Boston Streets"></div>
+      <div class="swiper-slide"><img src="images/water.jpg" alt="Boston Water"></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- End of slider container-->
 
 
     </main>
@@ -65,5 +67,7 @@
     </footer>
 </div> <!-- end footer wrapper -->
    
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html> 
