@@ -44,27 +44,5 @@ nav{
 
 /*MAIN STUFF GOES HERE*/
 main{
-    .boxes{
-        /* CSS GRID STUFF*/
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: .5em;
-        .boxes:nth-child(1) {
-            grid-row: 1;
-            grid-column: 1;
-        }
-        .boxes:nth-child(2) {
-            grid-row: 1;
-            grid-column: 2;
-        }
-        .boxes:nth-child(3) {
-            grid-row: 2;
-            grid-column: 1;
-        }
-        .boxes:nth-child(4) {
-            grid-row: 2;
-            grid-column: 2;
-        }
-    }
+    .card{width:50%}
 }
