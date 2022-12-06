@@ -48,8 +48,20 @@ main {
         height: auto;
         img{
             width: 100%;
+            display: block;
         }
-      }
+        p{
+            margin: 0;
+            padding: 1.2rem 2vw;
+            position: absolute;
+            transform: translateY(-100%);
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            color: white;
+            width: 100%;
+        }
+        b{font-weight: $boldWeight;}
+      } // end swiper
 } // end main
 
 

@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8"/>
-	<title>Navigation Example</title>
+	<title>Plan Your Visit</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"/>
 <!-- Swiper stylesheet-->
@@ -45,11 +45,50 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide"><img src="images/fenway-park.jpg" alt="Fenway Park"></div>
-      <div class="swiper-slide"><img src="images/sky-water.jpg" alt="Boston Sky and Water"></div>
-      <div class="swiper-slide"><img src="images/statue.jpg" alt="Boston Historical Statue"></div>
-      <div class="swiper-slide"><img src="images/streets.jpg" alt="Boston Streets"></div>
-      <div class="swiper-slide"><img src="images/water.jpg" alt="Boston Water"></div>
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/fenway-park.jpg" media="(max-width: 28.12rem)">
+            <source srcset="images/fenway-park.jpg" media="(min-width: 28.12rem)">
+            <img src="images/fenway-park.jpg" alt="Fenway Park">
+        </picture>
+        <p>Fenway Park</p>
+    </div>
+
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/sky-water.jpg" media="(max-width: 28.12rem)">
+            <source srcset="images/sky-water.jpg" media="(min-width: 28.12rem)">
+            <img src="images/sky-water.jpg" alt="Boston Sky and Water">
+        </picture>
+        <p>Boston Sky and Water</p>
+    </div>
+
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/statue.jpg" media="(max-width: 28.12rem)">
+            <source srcset="images/statue.jpg" media="(min-width: 28.12rem)">
+            <img src="images/statue.jpg" alt="Boston Historical Statue">
+        </picture>
+        <p>Boston Historical Statue</p>
+    </div>
+
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/streets.jpg" media="(max-width: 28.12rem)">
+            <source srcset="images/streets.jpg" media="(min-width: 28.12rem)">
+            <img src="images/streets.jpg" alt="Boston Streets">
+        </picture>
+        <p>Boston Streets</p>
+    </div>
+
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/water.jpg" media="(max-width: 28.12rem)">
+            <source srcset="images/water.jpg" media="(min-width: 28.12rem)">
+            <img src="images/water.jpg" alt="Boston Water">
+        </picture>
+        <p>Boston Water</p>
+    </div>
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
