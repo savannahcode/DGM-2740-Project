@@ -51,8 +51,4 @@ main{
 /* FOOTER STUFF HERE */
 footer{
     grid-template-columns: 1fr 1fr;
-    p{
-        grid-column: 1 / span 2;
-        grid-row: 3;
-      }
 }
