@@ -1,77 +1,119 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 
 /*  apply a natural box layout model to all elements  */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 /* BODY  */
 body {
-	font-family: $defaultFont;
-	font-size: 16px;
-	font-weight: $lightWeight;
-    min-width: 320px;
+  font-family: $defaultFont;
+  font-size: 16px;
+  font-weight: $lightWeight;
+  min-width: 320px;
 }
-
 
 /* HEADER  */
 header {
-    display: grid;
-    grid-template-columns: 51px auto;
-    align-items: center;
-	padding: .5rem 2vw;
-	h1 {
-        font-size: 1.6rem;
-        font-weight: $lightWeight;
-        padding-left: .5rem;
-        color: $primaryColor;
-    }
+  display: grid;
+  grid-template-columns: 51px auto;
+  align-items: center;
+  padding: 0.5rem 2vw;
+  h1 {
+    font-size: 1.6rem;
+    font-weight: $lightWeight;
+    padding-left: 0.5rem;
+    color: $primaryColor;
+  }
 } // end header
 
 /* NAVIGATION STUFF GOES HERE  */
 
-
-
-
-
-
 /* MAIN  */
 main {
- 	p {padding: .5rem 2vw; color: #333; line-height: 125%;}
-	h1 {
-        padding: 1rem 2vw .5rem 2vw; 
-        font-size: 1.5rem; 
-        color: $secondaryColor;
-        font-weight: $lightWeight
+  p {
+    padding: 0.5rem 2vw;
+    color: #333;
+    line-height: 125%;
+  }
+  h1 {
+    padding: 1rem 2vw 0.5rem 2vw;
+    font-size: 1.5rem;
+    color: $secondaryColor;
+    font-weight: $lightWeight;
+  }
+  // places the dots below the image
+  .swiper-wrapper {
+    margin-bottom: 25px;
+  }
+  .swiper {
+    width: 100%;
+    height: auto;
+    picture,
+    img {
+      width: 100%;
+      display: block;
     }
-    .swiper {
-        width: 100%;
-        height: auto;
-        picture, img{
-            width: 100%;
-            display: block;
-        }
-        p{
-            margin: 0;
-            padding: 1.2rem 2vw;
-            position: absolute;
-            transform: translateY(-100%);
-            background-color: rgba(0, 0, 0, 0.5);
-            text-align: center;
-            color: white;
-            width: 100%;
-        }
-        b{font-weight: $boldWeight;}
-      } // end swiper
+    p {
+      margin: 0;
+      padding: 1rem 2vw;
+      position: absolute;
+      transform: translateY(-100%);
+      background-color: rgba(0, 0, 0, 0.5);
+      text-align: center;
+      color: white;
+      width: 100%;
+    }
+    b {
+      font-weight: $boldWeight;
+    }
+  } // end swiper
+
+  .boxes {
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .box {
+      .text-over {
+        transform: translateY(-100%);
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+      }
+    }
+    #plan-visit{padding: .5em;}
+    /* CSS GRID STUFF*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    .boxes:nth-child(1) {grid-row: 1;}
+    .boxes:nth-child(2) {grid-row: 2;}
+    .boxes:nth-child(3) {grid-row: 3;}
+    .boxes:nth-child(4) {grid-row: 4;}
+    .box:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  } // end boxes
 } // end main
 
-
-
 /* FOOTER  */
-#footerWrapper {background-color: #1b1b1b; }
+#footerWrapper {
+  background-color: #1b1b1b;
+}
 footer {
-    font-size: .85rem;
-	padding: 1rem 0;
-	color: #bbb;
-	text-align: center;
-	a{color: #eee;}
+  font-size: 0.85rem;
+  padding: 1rem 0;
+  color: #bbb;
+  text-align: center;
+  a {
+    color: #eee;
+  }
 }
