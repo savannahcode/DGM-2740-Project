@@ -1,5 +1,12 @@
 
-
+div#pageWrapper{
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "navigation content"
+        "footer footer";
+    grid-template-columns: 150px auto;
+}
 
 /*----------- BODY --------------*/
 
@@ -10,9 +17,8 @@
 
 
 /*----------- NAVIGATION --------------*/
-    nav ul {margin-left: 2%;}
-    nav ul li {flex-basis: 25%;}
-    nav ul li a{padding: .5rem 1rem;}
+a.myjump{display: none;}
+nav{height: auto;}
 
 
 /*----------- MAIN --------------*/
