@@ -14,48 +14,61 @@ body {
 
 /*----------- HEADER --------------*/
 header {
-    display: flex;
-    padding: .5rem 2%;
+    display: grid;
+    grid-template-columns: 100px auto 48px;
+    padding: .5rem 2vw;
     background-color: lighten($primaryColor, 35%);
 }
 header h1 {
-    margin: 1em 0 0 .25em;
+    margin: .5em 0 0 .25em;
     font-size: 3em;
 }
-header img{
-    width: 150px;
-}
+header img{width: 100%;}
+button{
+    width: 52px;
+    height: 52px;
+    margin: 0;
+    align-self: start;
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    text-align: right;
+    color: $secondaryColor;
+} //end button
 
 /*----------- NAVIGATION --------------*/
 nav {
     background-color: $primaryColor;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-nav ul li {
-    float: left;
-    width: 25%;
-}
-nav ul li a {
-    display: block;
-    background-color: $primaryColor;
-    color: $secondaryColor;
-    padding: .5rem 0;
-    text-decoration: none;
-    font-size: .9rem;
-    text-align: center;
+
+    div{
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 1.1rem;
+        background-color: $primaryColor;
+        color: $secondaryColor
+    }
+
+    ul li a {
+        display: block;
+        background-color: $primaryColor;
+        color: $secondaryColor;
+        padding: .5rem 0;
+        text-decoration: none;
+        font-size: .9rem;
+        text-align: right;
+        width:100%;
+    } // end anchors
+
+    ul li a:hover {background-color: lighten($primaryColor, 10%);}
+
+    ul li.active a {
+        background-color: darken($primaryColor, 18%);
+        color: lighten($primaryColor, 35%);
+    }
 }
 
-nav ul li a:hover {
-    background-color: lighten($primaryColor, 10%);
-}
-nav ul li.active a {
-    background-color: darken($primaryColor, 18%);
-    color: lighten($primaryColor, 35%);
-}
+
 /*----------- MAIN --------------*/
 main {
     padding: 0 2%;

@@ -105,45 +105,53 @@ body {
 
 /*----------- HEADER --------------*/
 header {
-  display: flex;
-  padding: .5rem 2%;
+  display: grid;
+  grid-template-columns: 100px auto 48px;
+  padding: .5rem 2vw;
   background-color: #ffebd7; }
 
 header h1 {
-  margin: 1em 0 0 .25em;
+  margin: .5em 0 0 .25em;
   font-size: 3em; }
 
 header img {
-  width: 150px; }
+  width: 100%; }
+
+button {
+  width: 52px;
+  height: 52px;
+  margin: 0;
+  align-self: start;
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  text-align: right;
+  color: #150a04; }
 
 /*----------- NAVIGATION --------------*/
 nav {
   background-color: #ff9124; }
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0; }
-
-nav ul li {
-  float: left;
-  width: 25%; }
-
-nav ul li a {
-  display: block;
-  background-color: #ff9124;
-  color: #150a04;
-  padding: .5rem 0;
-  text-decoration: none;
-  font-size: .9rem;
-  text-align: center; }
-
-nav ul li a:hover {
-  background-color: #ffab57; }
-
-nav ul li.active a {
-  background-color: #c76300;
-  color: #ffebd7; }
+  nav div {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    background-color: #ff9124;
+    color: #150a04; }
+  nav ul li a {
+    display: block;
+    background-color: #ff9124;
+    color: #150a04;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: right;
+    width: 100%; }
+  nav ul li a:hover {
+    background-color: #ffab57; }
+  nav ul li.active a {
+    background-color: #c76300;
+    color: #ffebd7; }
 
 /*----------- MAIN --------------*/
 main {
