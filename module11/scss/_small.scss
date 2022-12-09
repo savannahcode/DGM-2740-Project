@@ -24,10 +24,10 @@ body {
 /*----------- HEADER --------------*/
 header {
     grid-area: header;
-    padding: .5rem 2%;
-    background-color: $primaryColor;
-    h1 {margin: 0;}
-    h2 {margin: 0; font-weight: $heavyWeight;}
+    padding: .5rem 2% 0;
+    background-color: lighten($secondaryColor, 30%);
+    img{width: 300px;
+    height: auto;}
 }
 
 
