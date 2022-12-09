@@ -99,14 +99,10 @@ main {
 
     div.computer{
         display: flex;
+        flex-direction: column;
         img{
             width: 100%;
             height:auto;
-            float: right;
-        }
-        figure{
-            margin: .5rem;
-            width:100%;
         }
     }
 }
