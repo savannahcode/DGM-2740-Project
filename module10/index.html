@@ -13,7 +13,6 @@
 
 
 
-
 <!-- STYLE SHEETS -->
 <link href="css/styles.css" rel="stylesheet">
 <!--- GOOGLE FONTS STYLE SHEET --->
@@ -22,15 +21,19 @@
      
 </head>
 <body>
+    <div id="pageWrapper">
+        <div class="content">
 <!-- HEADER HERE -->
 	<header>
         <img src="images/swag-logo.svg">
             <h1>Swag Shop</h1>
+            <button id="hamburgerBtn">&#9776;</button>
     </header>
     
     
 <!-- NAVIGATION HERE -->
     <nav class="clearfix">
+        <div>Swag Shop</div>
         <ul >
             <li><a href="#">Home</a></li>
             <li><a href="#">Products</a></li>
@@ -48,9 +51,9 @@
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Customer Information</legend>
-                <label class="top">Full Name*<input type="text" name="name" placeholder="Joe Smith" required></label>
-                <label class="top">Phone*<input type="tel" name="phone" placeholder="1234567892" required></label>
-                <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top">Full Name<input type="text" name="name" placeholder="Joe Smith" required></label>
+                <label class="top">Phone<input type="tel" name="phone" placeholder="1234449999" required></label>
+                <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
             </fieldset>
 
             <fieldset>
@@ -92,6 +95,8 @@
     <footer>
         &copy; 2022 &bull; Savannah Hilton &bull; 300-800-0000
     </footer>
-
+        </div> <!--End of content-->
+    </div> <!-- End of pageWrapper -->
+    <script src="scripts.js"></script>
 </body>
 </html>
