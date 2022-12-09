@@ -12,14 +12,15 @@
 /*----------- NAVIGATION --------------*/
     nav ul {margin-left: 2%;}
     nav ul li {width: auto;}
-    nav ul li:first-child a {border-left: 1px solid #777;}
-    nav ul li:last-child a {border-right: 1px solid #777;}
     nav ul li a{padding: .5rem 1rem;}
 
 
 /*----------- MAIN --------------*/
+form input.submitBtn {
+    margin: 0 0 1.5rem 2rem;
+}
 
-
+form label.top, form div {padding: 1rem 0 0 1.5rem;}
 
 /*----------- FOOTER --------------*/
     

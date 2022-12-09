@@ -16,7 +16,7 @@ body {
 header {
     display: flex;
     padding: .5rem 2%;
-    background-color: #ddd;
+    background-color: lighten($primaryColor, 35%);
 }
 header h1 {
     margin: 1em 0 0 .25em;
@@ -28,7 +28,7 @@ header img{
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #666;
+    background-color: $primaryColor;
 }
 nav ul {
     list-style-type: none;
@@ -41,51 +41,54 @@ nav ul li {
 }
 nav ul li a {
     display: block;
-    background-color: #444;
-    color: #eee;
-    border-left: 1px solid #777;
+    background-color: $primaryColor;
+    color: $secondaryColor;
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
     text-align: center;
 }
-nav ul li:first-child a {border-left: none;}
 
 nav ul li a:hover {
-    background-color: #eee;
-    color: #333;
+    background-color: lighten($primaryColor, 10%);
 }
 nav ul li.active a {
-    background-color: #000;
-    color: #fff;
+    background-color: darken($primaryColor, 18%);
+    color: lighten($primaryColor, 35%);
 }
 /*----------- MAIN --------------*/
 main {
     padding: 0 2%;
     min-height: 10rem;
+    h1{
+        margin-top: 1em;
+        font-size: 1.5em;
+    }
 }
 
 
 /*------------ FORM -------------*/
 form fieldset {
-    margin: 2rem 0;
-    border: 2px solid #445ba9;
+    margin: 1rem 0 2em 0;
+    border: 2px solid $secondaryColor;
     border-radius: 10px;
-    padding: .5rem 2%;
+    padding: .5rem .5rem 1rem .5rem;
 }
 
 form legend{
-    color: #445ba9;
+    color: $secondaryColor;
     margin: 0 1rem;
-    padding: 0.5 .5rem;
+    padding: 0 .5rem;
 }
 
 form label.top, form div {
     display: block;
-    padding-top: 1rem;
-    color: #9c2c13;
+    padding: 4%;
+    color: lighten($secondaryColor, 10%);
     font-size: .8rem;
 }
+
+form div{padding: .25rem}
 
 form label.top input, form label.top select{
     -webkit-appearance: none;
@@ -102,18 +105,20 @@ form label.top input, form label.top select{
 
 form label.sbs {
     display: block;
-    padding: .75rem 0;
     color: #555;
+    padding: .25rem 0 .25rem 1.5rem;
 }
 
 form input.submitBtn {
     border: none;
-    background-color: #9c2c13;
+    background-color: $secondaryColor;
+    font-size: 1.5em;
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
     width: 96%;
     max-width: 20rem;
+    margin: 2%;
 }
 
 form label.top input:required{
@@ -126,7 +131,7 @@ form label.top input:required:valid {
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #ddd;
+    background-color: lighten($primaryColor, 20%);
     padding: .5rem 2%;
     text-align: center;
 }
