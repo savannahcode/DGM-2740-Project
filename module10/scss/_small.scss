@@ -9,7 +9,15 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body {
     font-size: 16px;
     font-family: Verdana, sans-serif;
+    min-width: 320px;
 }
+#pageWrapper{
+    position: relative;
+    overflow-x: hidden;
+}
+
+.moveOver > .content{transform: translateX(-180px);}
+.content {transition: transform 500ms ease;}
 
 
 /*----------- HEADER --------------*/
@@ -39,13 +47,18 @@ button{
 /*----------- NAVIGATION --------------*/
 nav {
     background-color: $primaryColor;
-
+    width: 180px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translate(100%);
     div{
+        background-color: lighten($primaryColor, 5%);
         display: block;
         text-align: center;
         padding: 1.5rem;
         font-size: 1.1rem;
-        background-color: $primaryColor;
         color: $secondaryColor
     }
 
@@ -53,11 +66,10 @@ nav {
         display: block;
         background-color: $primaryColor;
         color: $secondaryColor;
-        padding: .5rem 0;
         text-decoration: none;
         font-size: .9rem;
         text-align: right;
-        width:100%;
+        padding: .9rem .5rem;
     } // end anchors
 
     ul li a:hover {background-color: lighten($primaryColor, 10%);}
@@ -113,7 +125,7 @@ form label.top input, form label.top select{
     color: #555;
     width: 100%;
     max-width: 20rem;
-    background-color: rgba(0,0,0,0.1);
+    background-color: lighten($primaryColor, 35%);
 }
 
 form label.sbs {
@@ -124,9 +136,9 @@ form label.sbs {
 
 form input.submitBtn {
     border: none;
-    background-color: $secondaryColor;
+    background-color: $primaryColor;
     font-size: 1.5em;
-    color: white;
+    color: $secondaryColor;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
     width: 96%;

@@ -1,25 +1,32 @@
-header, nav, main, footer {
-        max-width: 64rem;
-        margin:auto;
+header,
+main,
+nav,
+footer {
+  max-width: 64rem;
+  margin: auto;
 }
 
 /*----------- BODY --------------*/
 
-
-
 /*----------- HEADER --------------*/
-
-
-
-/*----------- NAVIGATION --------------*/
-
-
-
-/*----------- MAIN --------------*/
-form label.sbs{
-     padding: .4rem 0;   
+#hamburgerBtn {
+  display: none;
 }
 
+/*----------- NAVIGATION --------------*/
+nav {
+  position: static;
+  transform: translateX(0);
+  width: auto;
+  ul {
+    display: flex;
+    margin-left: 2%;
+  }
+  div {
+    display: none;
+  }
+}
+
+/*----------- MAIN --------------*/
 
 /*----------- FOOTER --------------*/
-    

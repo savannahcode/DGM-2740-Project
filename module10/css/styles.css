@@ -101,7 +101,18 @@ html {
 /*----------- BODY --------------*/
 body {
   font-size: 16px;
-  font-family: Verdana, sans-serif; }
+  font-family: Verdana, sans-serif;
+  min-width: 320px; }
+
+#pageWrapper {
+  position: relative;
+  overflow-x: hidden; }
+
+.moveOver > .content {
+  transform: translateX(-180px); }
+
+.content {
+  transition: transform 500ms ease; }
 
 /*----------- HEADER --------------*/
 header {
@@ -130,23 +141,28 @@ button {
 
 /*----------- NAVIGATION --------------*/
 nav {
-  background-color: #ff9124; }
+  background-color: #ff9124;
+  width: 180px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: translate(100%); }
   nav div {
+    background-color: #ff9e3e;
     display: block;
     text-align: center;
     padding: 1.5rem;
     font-size: 1.1rem;
-    background-color: #ff9124;
     color: #150a04; }
   nav ul li a {
     display: block;
     background-color: #ff9124;
     color: #150a04;
-    padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
     text-align: right;
-    width: 100%; }
+    padding: .9rem .5rem; }
   nav ul li a:hover {
     background-color: #ffab57; }
   nav ul li.active a {
@@ -192,7 +208,7 @@ form label.top input, form label.top select {
   color: #555;
   width: 100%;
   max-width: 20rem;
-  background-color: rgba(0, 0, 0, 0.1); }
+  background-color: #ffebd7; }
 
 form label.sbs {
   display: block;
@@ -201,9 +217,9 @@ form label.sbs {
 
 form input.submitBtn {
   border: none;
-  background-color: #150a04;
+  background-color: #ff9124;
   font-size: 1.5em;
-  color: white;
+  color: #150a04;
   border-radius: 1rem;
   padding: .75rem 1.5rem;
   width: 96%;
@@ -232,15 +248,6 @@ footer {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
-  nav ul {
-    margin-left: 2%; }
-
-  nav ul li {
-    width: auto; }
-
-  nav ul li a {
-    padding: .5rem 1rem; }
-
   /*----------- MAIN --------------*/
   form input.submitBtn {
     margin: 0 0 1.5rem 2rem; }
@@ -251,16 +258,29 @@ footer {
   /*----------- FOOTER --------------*/ }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
-  header, nav, main, footer {
+  header,
+  main,
+  nav,
+  footer {
     max-width: 64rem;
     margin: auto; }
 
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
-  /*----------- NAVIGATION --------------*/
-  /*----------- MAIN --------------*/
-  form label.sbs {
-    padding: .4rem 0; }
+  #hamburgerBtn {
+    display: none; }
 
+  /*----------- NAVIGATION --------------*/
+  nav {
+    position: static;
+    transform: translateX(0);
+    width: auto; }
+    nav ul {
+      display: flex;
+      margin-left: 2%; }
+    nav div {
+      display: none; }
+
+  /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/ }
 /* end of media query */
