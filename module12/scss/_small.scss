@@ -21,42 +21,75 @@ header h1 {margin: 0;}
 header h2 {margin: 0; font-weight: normal;}
 
 /*----------- NAVIGATION --------------*/
-nav {
+#navWrapper{    
     background-color: #666;
+    width: 100%;
 }
-nav ul {
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #666;
+    margin: 0 auto;
+
+ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
-nav ul li {
-    float: left;
-    width: 25%;
+ul li {
+    flex-basis: 33.33333%;
 }
-nav ul li a {
-    display: block;
+ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #444;
     color: #eee;
-    border-left: 1px solid #777;
-    padding: .5rem 0;
+    padding: 1rem 0;
     text-decoration: none;
     font-size: .9rem;
     text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    ion-icon{
+        width: 100%;
+        font-size:3rem;
+    }
 }
-nav ul li:first-child a {border-left: none;}
 
-nav ul li a:hover {
+ul li a:hover {
     background-color: #eee;
     color: #333;
 }
-nav ul li.active a {
+ul li.active a {
     background-color: #000;
     color: #fff;
+}
 }
 /*----------- MAIN --------------*/
 main {
     padding: 0 2%;
     min-height: 10rem;
+
+    div#inventoryWrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    figure{position: relative;}
+    figcaption{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: white;
+        padding: .3rem $gutter;
+    }
 }
 
 
