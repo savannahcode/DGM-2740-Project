@@ -28,6 +28,7 @@ nav ul li {
 
 /*----------- MAIN --------------*/
 main{
+        padding: 0 3em;
         figure{
                 margin: .5rem;
                 width:100%;
@@ -35,7 +36,6 @@ main{
             div.computer{
                 flex-direction: row;
                 justify-content: space-between;
-                padding: 0 3em;
             }
 }
 
