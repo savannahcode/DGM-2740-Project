@@ -92,16 +92,31 @@ main {
     grid-area: content;
     padding: 0 2%;
     min-height: 10rem;
-    background-color: lighten($primaryColor,30%);
+    background-color: lighten($primaryColor,40%);
     h1 {margin: 0; padding: 1rem 0 0 0;}
+    h2{margin: 0; padding: 1rem 0 0 0;}
     p {margin: 0; padding: .5rem 0;}
+
+    div.computer{
+        display: flex;
+        img{
+            width: 100%;
+            height:auto;
+            float: right;
+        }
+        figure{
+            margin: .5rem;
+            width:100%;
+        }
+    }
 }
 
 
 /*----------- FOOTER --------------*/
 footer {
     grid-area: footer;
-    background-color: $secondaryColor;
+    background-color: darken($secondaryColor, 20%);
+    color: #fff;
     padding: .5rem 2%;
     text-align: center;
 }
