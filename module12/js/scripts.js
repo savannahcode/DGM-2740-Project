@@ -45,7 +45,7 @@ fetch(apiURL)
 
       let myDiv = document.createElement("div");
       myDiv.appendChild(mySpanTag1);
-      myDiv.appendChild(, mySpanTag2);
+      myDiv.appendChild(mySpanTag2);
 
       let mySection = document.createElement("section");
       mySection.appendChild(myFigureTag);
