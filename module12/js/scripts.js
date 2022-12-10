@@ -1,5 +1,30 @@
 // what is the path to the JSON file?
-const apiURL = "../hoteldata.json";
+const apiURL = [
+  {
+    name: "Southern Serenade",
+    photo: "images/serenade.jpg",
+    address: ["1555 North Canyon Dr.", "Lexington, VA 88765"],
+    phone: "1-307-886-1234",
+  },
+  {
+    name: "The Grand America Hotel",
+    photo: "images/america.jpg",
+    address: ["555 Main St.", "Salt Lake City UT, 84111"],
+    phone: "1-307-886-1234",
+  },
+  {
+    name: "Four Seasons",
+    photo: "images/season.jpg",
+    address: ["2019 Pennsylvania Ave", "Washington, DC 20125"],
+    phone: "1-303-389-2000",
+  },
+  {
+    name: "Hyatt Place Washington",
+    photo: "images/hyatt.jpg",
+    address: ["1555 North Canyon Dr.", "Lexington VA 88765"],
+    phone: "1-202-828-2500",
+  },
+];
 
 //Go fetch it and then wait for a response.
 fetch(apiURL)
