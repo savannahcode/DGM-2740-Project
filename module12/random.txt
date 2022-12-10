@@ -1,0 +1,19 @@
+  <section>
+          <figure>
+            <img src="images/serenade.jpg" alt="Marriot Hotel" />
+            <figcaption>Marriott</figcaption>
+          </figure>
+          <div>
+            <span>
+              <ion-icon name="car"></ion-icon>
+              <p>1234 Adress Line One</p>
+              <p>City State Zip</p>
+            </span>
+            <span>
+              <ion-icon name="call"></ion-icon>
+              <p>1-800-900-7777</p>
+            </span>
+          </div>
+        </section>
+        <!-- End of Marriott hotel card -->
+      
