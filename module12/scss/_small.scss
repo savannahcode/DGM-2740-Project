@@ -79,13 +79,12 @@ main {
     div#myCards{
         display: grid;
         grid-template-columns: 1fr;
-    
-
+        margin-bottom: 7em;
     figure{
         position: relative;
         margin: 0;
         width: 100%;
-    img{width: 100%}
+    img{width: 100%;}
     figcaption{
         position: absolute;
         bottom: 0;
