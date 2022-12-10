@@ -19,6 +19,38 @@ fetch(apiURL)
       myFigureTag.appendChild(myImageTag);
       myFigureTag.appendChild(myCaptionTag);
 
-      document.getElementById("myCards").appendChild(myFigureTag);
+      let myCarIcon = document.createElement("ion-icon");
+      myCarIcon.name = "car";
+
+      let streetaddressTag = document.createElement("p");
+      streetaddressTag.textContent = myList[i].address[0];
+
+      let regionaddressTag = document.createElement("p");
+      regionaddressTag.textContent = myList[i].address[1];
+
+      let mySpanTag1 = document.createElement("span");
+      mySpanTag1.appendChild(myCarIcon);
+      mySpanTag1.appendChild(streetaddressTag);
+      mySpanTag1.appendChild(regionaddressTag);
+
+      let myPhoneIcon = document.createElement("ion-icon");
+      myPhoneIcon.name = "call";
+
+      let phoneTag = document.createElement("p");
+      phoneTag.textContent = myList[i].phone;
+
+      let mySpanTag2 = document.createElement("span");
+      mySpanTag2.appendChild(myPhoneIcon);
+      mySpanTag2.appendChild(phoneTag);
+
+      let myDiv = document.createElement("div");
+      myDiv.appendChild(mySpanTag1);
+      myDiv.appendChild(mySpanTag2);
+
+      let mySection = document.createElement("section");
+      mySection.appendChild(myFigureTag);
+      mySection.appendChild(myDiv);
+
+      document.getElementById("myCards").appendChild(mySection);
     }
   }); //end of "then" fat arrow function
