@@ -76,12 +76,16 @@ main {
     padding: 0 2%;
     min-height: 10rem;
 
-    div#inventoryWrapper{
+    div#myCards{
         display: grid;
         grid-template-columns: 1fr;
-    }
+    
 
-    figure{position: relative;}
+    figure{
+        position: relative;
+        margin: 0;
+        width: 100%;
+    img{width: 100%}
     figcaption{
         position: absolute;
         bottom: 0;
@@ -90,6 +94,22 @@ main {
         color: white;
         padding: .3rem $gutter;
     }
+    } //end of figure
+
+    div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div ion-icon {
+        float: left;
+        font-size: 1.5rem;
+    }
+    div span p{
+        padding-left: 1.8rem;
+        margin: 0;
+    }
+    } //end of inventoryWrapper
 }
 
 

@@ -14,7 +14,11 @@
 
 
 /*----------- MAIN --------------*/
-
+main {
+    div#myCards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 
 /*----------- FOOTER --------------*/
