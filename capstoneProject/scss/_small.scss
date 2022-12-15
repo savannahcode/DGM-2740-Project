@@ -32,14 +32,17 @@ header {
     margin: 0;
     text-align: center;
     display: grid;
-    grid-template-columns: auto 48px;
+    grid-template-columns: 75px auto 48px;
     padding: .5rem 2vw;
     background-color: rgba(98, 18, 58, 0.5);
-
     .head-text{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        figure.logo {
+            float: left;
+            margin: 0;
+        }
         h1 {
             margin: 0;
             font-size: 3.2em;
