@@ -1,4 +1,4 @@
-main {
+nav, main {
  max-width: 64rem;
 margin:auto;
 }
@@ -24,6 +24,9 @@ display: none;
 
 
 /*----------- NAVIGATION --------------*/
+.navWrapper{
+        background-color: lighten($lightGreen, 12%);
+}
 nav {
         position: static;
         transform: translateX(0);
@@ -40,7 +43,24 @@ nav {
 
 
 /*----------- MAIN --------------*/
-
+main{
+        .greenBtn{
+            border-radius: 20px;
+            width: 260px;
+            font-size: 1.5em;
+        }
+    
+        p{font-size: 1.7em;}
+    
+        .pinkBtn{
+            width: 270px;
+            font-size: 3.2em;
+        }
+    
+        .socialIcons{
+            font-size: 3.8em;
+        }
+    }
 
 
 /*----------- FOOTER --------------*/
