@@ -121,6 +121,7 @@ main {
     padding: 2em 2% 0 2%;
     min-height: 10rem;
     background-color: tr;
+
     p{
         font-family: $regularFont;
         font-weight: 200;
@@ -183,6 +184,22 @@ main {
       font-weight: $boldWeight;
     }
   } // end swiper
+  .side-page{
+    h1 {
+        color: $darkPink;
+        text-align: left;
+        font-size: 3em;
+        margin: 0 0 .5em 0;
+    }
+    #participateBtns{
+        display: grid;
+        grid-template-columns: 1fr;
+        button{
+            margin-bottom: .8em;
+            min-height: 110px;
+        }
+    }
+    } // end side-page
 }
 
 

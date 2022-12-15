@@ -60,6 +60,17 @@ main{
         .socialIcons{
             font-size: 3.8em;
         }
+
+        .side-page{
+                #participateBtns{
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+            .pinkBtn{
+                font-size: 2em;
+                margin: .7em .4em 0 .4em;
+                width: 95%;
+            }
+        }
     }
 
 
