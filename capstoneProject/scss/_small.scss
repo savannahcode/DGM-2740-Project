@@ -233,6 +233,19 @@ main {
             text-align: center;
             color: lighten($darkGreen, 55%);
         }
+         /* LAZY LOADING */
+    section.thegallery figure {
+        width: 100%;
+        height: 0;
+        padding-bottom: 68%; /* You define this doing image height / width * 100% */
+        position: relative;
+    }
+    
+    section.thegallery figure img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+    }
     }
     } // end side-page
     /*------------ FORM -------------*/

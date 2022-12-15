@@ -113,9 +113,124 @@
                 </div>
               </div>
               <!--End of volunteers-->
-
-              <!--End of participateBtns-->
+              <!--START OF LAZY LOADING-->
+              <p>Pictures of our work in AFHK:</p>
+              <section class="thegallery">
+                <figure>
+                  <img
+                    alt="AFHK Image"
+                    class="lazy"
+                    data-src="images/lazy-loaders/afhk-img1.jpg"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    alt="AFHK Image"
+                    class="lazy"
+                    data-src="images/lazy-loaders/afhk-img2.jpg"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    alt="AFHK Image"
+                    class="lazy"
+                    data-src="images/lazy-loaders/afhk-img3.jpg"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    alt="AFHK Image"
+                    class="lazy"
+                    data-src="images/lazy-loaders/afhk-img4.jpg"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    alt="AFHK Image"
+                    class="lazy"
+                    data-src="images/lazy-loaders/afhk-img5.jpg"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    alt="AFHK Image"
+                    class="lazy"
+                    data-src="images/lazy-loaders/afhk-img6.jpg"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    alt="AFHK Image"
+                    class="lazy"
+                    data-src="images/lazy-loaders/afhk-img7.jpg"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    alt="AFHK Image"
+                    class="lazy"
+                    data-src="images/lazy-loaders/afhk-img8.jpg"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    alt="AFHK Image"
+                    class="lazy"
+                    data-src="images/lazy-loaders/afhk-img9.jpg"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    alt="AFHK Image"
+                    class="lazy"
+                    data-src="images/lazy-loaders/afhk-img10.jpg"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    alt="AFHK Image"
+                    class="lazy"
+                    data-src="images/lazy-loaders/afhk-img11.jpg"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    alt="AFHK Image"
+                    class="lazy"
+                    data-src="images/lazy-loaders/afhk-img12.jpg"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    alt="AFHK Image"
+                    class="lazy"
+                    data-src="images/lazy-loaders/afhk-img13.jpg"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    alt="AFHK Image"
+                    class="lazy"
+                    data-src="images/lazy-loaders/afhk-img14.jpg"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    alt="AFHK Image"
+                    class="lazy"
+                    data-src="images/lazy-loaders/afhk-img15.jpg"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    alt="AFHK Image"
+                    class="lazy"
+                    data-src="images/lazy-loaders/afhk-img16.jpg"
+                  />
+                </figure>
+              </section>
             </section>
+            <!--End of side-page-->
           </main>
           <img src="images/bottom-hills.png" alt="rolling hills" />
         </div>
@@ -128,9 +243,12 @@
     </div>
     <!-- End of pageWrapper -->
     <script src="js/scripts.js"></script>
-    <script
-      src="https://kit.fontawesome.com/77eefe8645.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+    <script>
+      var lazyLoadInstance = new LazyLoad({
+        elements_selector: ".lazy",
+        threshold: 0,
+      });
+    </script>
   </body>
 </html>
