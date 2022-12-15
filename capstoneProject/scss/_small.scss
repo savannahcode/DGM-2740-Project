@@ -184,6 +184,7 @@ main {
       font-weight: $boldWeight;
     }
   } // end swiper
+
   .side-page{
     h1 {
         color: $darkPink;
@@ -191,6 +192,7 @@ main {
         font-size: 3em;
         margin: 0 0 .5em 0;
     }
+    p{text-align: left;}
     #participateBtns{
         display: grid;
         grid-template-columns: 1fr;
@@ -198,6 +200,13 @@ main {
             margin-bottom: .8em;
             min-height: 110px;
         }
+    }
+    ul li{
+        text-align: left;
+        font-family: $regularFont;
+        list-style-type: none;
+        padding-bottom: .75rem;
+        font-weight: 200;
     }
     } // end side-page
     /*------------ FORM -------------*/
