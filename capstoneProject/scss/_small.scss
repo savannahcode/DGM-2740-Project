@@ -98,8 +98,7 @@ ul li a {
 } // end anchors
 
 ul li a:hover {
-    background-color: #eee;
-    color: #333;
+    background-color: $lightGreen;
 }
 ul li.active a {
     background-color: $darkPink;
@@ -109,13 +108,19 @@ ul li.active a {
 
 
 /*----------- MAIN --------------*/
+.mainWrapper{
+    margin: 0;
+    padding: 0;
+        img{width: 100%;}
+    }
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 2em 2%;
+    padding: 2em 2% 0 2%;
     min-height: 10rem;
+    background-color: tr;
     p{
         font-family: $regularFont;
         font-weight: 200;
@@ -154,7 +159,7 @@ main {
     //SWIPER code start
   // places the dots below the image
   .swiper-wrapper {
-    margin-bottom: 25px;
+    margin: 2em 0;
   }
   .swiper {
     width: 100%;
@@ -184,7 +189,7 @@ main {
 /*----------- FOOTER --------------*/
 footer {
     background-color: $darkGreen;
-    padding: .5rem 2%;
+    padding: 1rem 2%;
     text-align: center;
     font-family: $regularFont;
 }
