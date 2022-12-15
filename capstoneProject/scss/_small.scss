@@ -208,6 +208,32 @@ main {
         padding-bottom: .75rem;
         font-weight: 200;
     }
+
+    // ABOUT US INFO CARDS
+    .volunteers{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .person-card{
+            padding: 1em;
+            margin: 1em;
+            background-color: $lightPink;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        button{
+            background-color: $darkGreen;
+            width: 100%;
+            border: none;
+            padding: .5em;
+        }
+        a{
+            text-decoration: none;
+            text-align: center;
+            color: lighten($darkGreen, 55%);
+        }
+    }
     } // end side-page
     /*------------ FORM -------------*/
 form {
