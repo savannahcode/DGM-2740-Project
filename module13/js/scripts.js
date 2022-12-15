@@ -35,7 +35,7 @@ fetch(apiURL).then((response) =>
             " from the mylist of 40"
         );
         // add day for that forecast
-        let theDayName = document.createElement("span");
+        let theDayName = document.createElement("h2");
         theDayName.textContent = weekday[forcastDayNum];
         // add temperature
         let theTemp = document.createElement("p");
@@ -54,7 +54,10 @@ fetch(apiURL).then((response) =>
         document.getElementById("weatherForecast").appendChild(theDay);
         // increment forecast day
         forcastDayNum += 1;
+        if (forcastDayNum === 7) {
+          forcastDayNum = 0;
+        }
       } // end if
     } // end for
   })
-); //end of .then
+); //end of .then fat arrow function

@@ -16,32 +16,28 @@
 
     <!-- STYLE SHEETS -->
     <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- HEADER HERE -->
     <header>
-      <h1>Provo, UT Weather</h1>
-      <h2>Using AJAX & JSON</h2>
+      <h1>Open Weather Maps</h1>
+      <h2>5 Day Forecast Using AJAX & JSON</h2>
     </header>
-
-    <!-- NAVIGATION HERE -->
-    <nav class="clearfix">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li class="active"><a href="#">Forecast</a></li>
-        <li><a href="#">Report a Storm</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </nav>
 
     <!-- CONTENT HERE -->
     <main>
-      <h1>Weather conditions for <span id="townName">city</span></h1>
-      <div id="weatherForecast"></div>
+      <h1><span id="townName">city</span></h1>
+      <section id="weatherForecast"></section>
     </main>
 
     <!-- FOOTER HERE -->
-    <footer>&copy; 202x &bull; Savannah Hilton &bull; 123-555-6789</footer>
+    <footer>&copy; 2022 &bull; Savannah Hilton</footer>
     <script src="js/scripts.js"></script>
   </body>
 </html>

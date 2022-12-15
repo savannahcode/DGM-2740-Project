@@ -18,7 +18,9 @@
 
 
 /*----------- MAIN --------------*/
-
+main{
+    section#weatherForecast{grid-template-columns: 1fr 1fr 1fr;}
+}
 
 
 /*----------- FOOTER --------------*/
