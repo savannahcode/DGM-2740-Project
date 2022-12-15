@@ -8,11 +8,25 @@ header, nav, main, footer {
 
 
 /*----------- HEADER --------------*/
-
+#hamburgerBtn {
+        display: none;
+      }
 
 
 /*----------- NAVIGATION --------------*/
-
+nav {
+        position: static;
+        transform: translateX(0);
+        width: auto;
+        ul {
+          display: flex;
+          margin-left: 2%;
+        }
+        ul a{padding: .9rem 2rem;}
+        div {
+          display: none;
+        }
+      }
 
 
 /*----------- MAIN --------------*/

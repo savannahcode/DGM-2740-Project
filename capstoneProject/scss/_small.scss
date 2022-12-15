@@ -11,47 +11,82 @@ body {
     font-family: $fancyFont;
 }
 
+#pageWrapper{
+    position: relative;
+    overflow-x: hidden;
+}
+
+.moveOver > .content{transform: translateX(-180px);}
+.content {transition: transform 500ms ease;}
 
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: #ddd;
+    background-color: $darkGreen;
+    display: grid;
+    grid-template-columns: auto 48px;
+    padding: .5rem 2vw;
+
+    h1 {margin: 0;}
+    h2 {margin: 0; font-weight: normal;}
+
+    button{
+        width: 52px;
+        height: 52px;
+        margin: 0;
+        align-self: start;
+        background: none;
+        border: none;
+        font-size: 2.5rem;
+        text-align: right;
+        color: $darkPink;
+    } //end button
 }
-header h1 {margin: 0;}
-header h2 {margin: 0; font-weight: normal;}
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #666;
+    background-color: lighten($lightGreen, 15%);
     font-family: $regularFont;
+    width: 180px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translate(100%);
+    div{
+        background-color: $lightGreen;
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 1.1rem;
+        color: $darkPink;
+    }
 ul {
     list-style-type: none;
-    padding: 0;
     margin: 0;
-}
-ul li {
-    float: left;
-    width: 25%;
+    padding: 0;
 }
 ul li a {
     display: block;
-    background-color: #444;
-    color: #eee;
-    padding: .5rem 0;
+    background-color: lighten($lightGreen, 15%);
+    color: #000;
     text-decoration: none;
     font-size: .9rem;
-    text-align: center;
-}
+    text-align: right;
+    padding: .9rem .5rem;
+} // end anchors
 
 ul li a:hover {
     background-color: #eee;
     color: #333;
 }
 ul li.active a {
-    background-color: #000;
+    background-color: $darkPink;
     color: #fff;
 }
 }
+
+
 /*----------- MAIN --------------*/
 main {
     padding: 0 2%;
@@ -62,7 +97,7 @@ main {
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #ddd;
+    background-color: $darkGreen;
     padding: .5rem 2%;
     text-align: center;
     font-family: $regularFont;

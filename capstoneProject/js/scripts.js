@@ -1,19 +1,6 @@
-// what is the path to the JSON file?
-const apiURL = ""
+const hb = document.querySelector("#hamburgerBtn");
+const pw = document.querySelector("#pageWrapper");
 
-//Go fetch it and then wait for a response.
-fetch(apiURL)
-  .then((response) => response.json())
-  .then((myList) => {
-    //Once it comes back, display it to the console.
-    console.log(myList);
-    
-    
-    
-    
-    
-    
-    
-    
-    
-}); //end of "then" fat arrow function
+hb.addEventListener("click", () => {
+  pw.classList.toggle("moveOver");
+});
