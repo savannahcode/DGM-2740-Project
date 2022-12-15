@@ -47,7 +47,14 @@ main{
         width: 260px;
         font-size: 2.6em;
     }
-}
+    form {
+        input.submitBtn {
+        margin: 0 0 1.5rem 2rem;
+    }
+    
+     label.top, form div {padding: 1rem 0 0 1.5rem;}
+    } // end of form
+} // end of sidePage
 }
 
 
