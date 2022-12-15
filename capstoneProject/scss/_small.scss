@@ -34,7 +34,7 @@ header {
     display: grid;
     grid-template-columns: auto 48px;
     padding: .5rem 2vw;
-    background-color: rgba(98, 18, 58, 0.4);
+    background-color: rgba(98, 18, 58, 0.5);
 
     .head-text{
         display: flex;
@@ -44,7 +44,11 @@ header {
             margin: 0;
             font-size: 3.2em;
         }
-        h2 {margin: 0; font-weight: 700;}
+        h2 {
+            margin: 0; 
+            font-weight: 700;
+            font-size: 1.5em;
+        }
     }
 
     button{
@@ -56,7 +60,7 @@ header {
         border: none;
         font-size: 2.5rem;
         text-align: right;
-        color: lighten($lightPink, 15%);
+        color: lighten($lightGreen, 15%);
     } //end button
 }
 

@@ -1,6 +1,6 @@
 main {
-        max-width: 64rem;
-        margin:auto;
+ max-width: 64rem;
+margin:auto;
 }
 
 /*----------- BODY --------------*/
@@ -13,9 +13,14 @@ main {
         background-image: url(../images/header-large.jpg);
         background-size: cover;
 }
+
+header .head-text{
+        h1 {font-size: 7.2em;}
+        h2 {font-size: 3.3em;}
+    }
 #hamburgerBtn {
-        display: none;
-      }
+display: none;
+}
 
 
 /*----------- NAVIGATION --------------*/
