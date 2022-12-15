@@ -1,4 +1,4 @@
-header, nav, main, footer {
+main {
         max-width: 64rem;
         margin:auto;
 }
@@ -8,6 +8,11 @@ header, nav, main, footer {
 
 
 /*----------- HEADER --------------*/
+.headerWrapper{
+        height: 400px;
+        background-image: url(../images/header-large.jpg);
+        background-size: cover;
+}
 #hamburgerBtn {
         display: none;
       }
@@ -20,9 +25,9 @@ nav {
         width: auto;
         ul {
           display: flex;
-          margin-left: 2%;
+          justify-content: space-between;
         }
-        ul a{padding: .9rem 2rem;}
+        ul li a{padding: .9rem 2.5rem;}
         div {
           display: none;
         }

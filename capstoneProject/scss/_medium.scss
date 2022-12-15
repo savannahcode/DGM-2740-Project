@@ -6,8 +6,15 @@
 
 
 /*----------- HEADER --------------*/
+.headerWrapper{
+    height: 240px;
+    background-image: url(../images/header-medium.jpg);
+}
 
-
+header{
+    h1 {font-size: 6rem;}
+    h2 {font-size: 2rem;}
+}
 
 /*----------- NAVIGATION --------------*/
  

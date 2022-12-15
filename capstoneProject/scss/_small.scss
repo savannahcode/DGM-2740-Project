@@ -20,15 +20,32 @@ body {
 .content {transition: transform 500ms ease;}
 
 /*----------- HEADER --------------*/
+.headerWrapper {
+    height: 140px;
+    background-image: url(../images/header-small.jpg);
+    background-position: left bottom;
+  }
 header {
-    padding: .5rem 2%;
-    background-color: $darkGreen;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    margin: 0;
+    text-align: center;
     display: grid;
     grid-template-columns: auto 48px;
     padding: .5rem 2vw;
+    background-color: rgba(98, 18, 58, 0.4);
 
-    h1 {margin: 0;}
-    h2 {margin: 0; font-weight: normal;}
+    .head-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {
+            margin: 0;
+            font-size: 3.2em;
+        }
+        h2 {margin: 0; font-weight: 700;}
+    }
 
     button{
         width: 52px;
@@ -39,13 +56,13 @@ header {
         border: none;
         font-size: 2.5rem;
         text-align: right;
-        color: $darkPink;
+        color: lighten($lightPink, 15%);
     } //end button
 }
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: lighten($lightGreen, 15%);
+    background-color: lighten($lightGreen, 12%);
     font-family: $regularFont;
     width: 180px;
     position: absolute;
@@ -68,7 +85,7 @@ ul {
 }
 ul li a {
     display: block;
-    background-color: lighten($lightGreen, 15%);
+    background-color: lighten($lightGreen, 12%);
     color: #000;
     text-decoration: none;
     font-size: .9rem;
