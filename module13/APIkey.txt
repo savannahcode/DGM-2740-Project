@@ -1,6 +1,6 @@
 API key: 356839bb540183cc883c1c645c9007d4
 
-document.getElementById("place").innerHTML = weatherInfo.name;
+
     document.getElementById("currentTemp").innerHTML = weatherInfo.main.temp;
     document.getElementById("windSpeed").innerHTML = weatherInfo.wind.speed;
 
